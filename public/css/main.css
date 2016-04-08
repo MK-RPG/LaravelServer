@@ -21,7 +21,7 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    background-color: #4f1b00;
+    background-color:#101b26;
 }
 
 /*
@@ -262,16 +262,24 @@ header a:link, header a:visited {
 /* ============================================================================
    Promo
    ============================================================================ */
-
 #promo {
     height: 400px;
     padding: 0 30px;
-    background: url('../img/rsz.jpg');
+    background: url('../img/promo.jpg');
     background-size: 100% 100%;
     background-position: center;
-
-
 }
+
+
+#promo-main {
+    height: 400px;
+    padding: 0 30px;
+    background: url('../img/sword.jpg');
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+
 
 
 #promo-details {

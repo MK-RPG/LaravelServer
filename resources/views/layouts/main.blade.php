@@ -21,25 +21,7 @@
                         <a href="/"><span id="logo-accent">MK</span>Game</a>
                     </div><!-- end logo -->
 
-                    <nav class="dropdown">
-                        <ul>
-                            <li>
-                                <a href="#">Shop by Category {{ HTML::image('img/down-arrow.gif', 'Shop by Category') }}</a>
-                                <ul>
-                                    {{--@foreach($catnav as $cat)--}}
-                                        {{--<li>{{ HTML::link('/store/category/'.$cat->id, $cat->name) }}</li>--}}
-                                    {{--@endforeach--}}
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-
-                    <div id="search-form">
-                        {{ Form::open(array('url'=>'store/search', 'method'=>'get')) }}
-                        {{ Form::text('keyword', null, array('placeholder'=>'Search by keyword', 'class'=>'search')) }}
-                        {{ Form::submit('Search', array('class'=>'search submit')) }}
-                        {{ Form::close() }}
-                    </div><!-- end search-form -->
+                    @yield('top-navigation')
 
                     <div id="user-menu">
 
@@ -71,12 +53,8 @@
                                 </ul>
                             </nav>
                         @endif
-                        
-                    </div><!-- end user-menu -->
 
-                    <div id="view-cart">
-                        <a href="store/cart">{{ HTML::image('img/blue-cart.gif', 'View Cart') }} View Cart</a>
-                    </div><!-- end view-cart -->
+                    </div><!-- end user-menu -->
                 </section><!-- end action-bar -->
             </header>
 
