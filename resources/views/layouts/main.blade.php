@@ -14,12 +14,10 @@
     <body>
         <div id="wrapper">
             <header>
-               
                 <section id="top-area">
                     <p><a href="mailto:office@shop.com"></a></p>
                 </section> <!--end top-area -->
                     @yield('top-navigation')
-
                     <div id="user-menu">
                         @if(Auth::check())
                             <nav>
@@ -38,7 +36,6 @@
                             </nav>
                         @else
                             <nav id="signin" class="dropdown">
-                               
                             </nav>
                         @endif
                     </div><!-- end user-menu -->
@@ -53,10 +50,8 @@
                 <div class="grid_24">
                     <div class="left_stripe"></div>
                     <div class="rigth_stripe"></div>
-
                     <nav class="navigate">
                         <ul>
-                         
                            <li>
                                 <a href="#">{{ HTML::image('img/user-icon.gif', 'Sign In') }} Sign In {{ HTML::image('img/down-arrow.gif', 'Sign In') }}
                                 </a>

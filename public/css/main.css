@@ -115,19 +115,14 @@ header .rigth_stripe{
     background-repeat: no-repeat; 
     right:27px;
 }
-header .navigation{ 
-    color:#9f8c5c; 
-    text-align:right;
-    padding:24px 0 0 0;
-}
+
 header .navigation a{
-    font-size: 13px; 
-    color:#8f7053; 
-    display:inline-block; 
-    text-shadow: 1px 0 #fff; 
+    font-size: 13px;
+    color:#8f7053;
+    text-shadow: 1px 0 #fff;
     padding:0 12px 0;
 }
-header .navigation a:hover{ 
+header .navigation a:hover{
     text-decoration:underline;
 }
 header .navigation .last{ 
@@ -158,13 +153,18 @@ header h1 a {
     z-index:88;
 }
 
-.navigate{ 
-    position:relative; 
+.navigate{
+    position:relative;
     height:90px;
     padding:34px 0 0 31px; 
     background-image:url('../img/nav_bg.png');
     background-repeat:no-repeat; 
     z-index:99;
+}
+.navigate li { display: inline; }
+
+.navigate li a {
+    display: inline-block;
 }
 
 .container_24{
@@ -175,8 +175,6 @@ header h1 a {
 .sf-menu {
     font-family: 'Vollkorn', serif;
 }
-
-
 
 p, h1, h2, h3, h4, h5, ul, li {
     margin: 0;
