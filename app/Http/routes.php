@@ -10,7 +10,7 @@
 | and give it the controller to call when that URI is requested.
 |
 */
-Route::get('/', 'HomeController@getIndex');
+
 
 
 /*Route::group(['middleware' => 'web'], function () {
@@ -38,16 +38,31 @@ Route::get('/', 'HomeController@getIndex');
         'as' => 'main_layout',
     ]);
 });*/
+Route::get('/', 'HomeController@getIndex');
 
-Route::get('admin/categories', 'CategoriesController@getIndex');
-Route::post('admin/categories/create', 'CategoriesController@postCreate');
-Route::post('admin/categories/destroy', 'CategoriesController@postDestroy');
+/*Route::group(['middleware' => ['web']], function () {*/
 
-Route::get('admin/products', 'ProductsController@getIndex');
-Route::post('admin/products/create', 'ProductsController@postCreate');
-Route::post('admin/products/destroy', 'ProductsController@postDestroy');
 
-Route::get('store', 'StoreController@getIndex');
+
+    Route::get('admin/categories', 'CategoriesController@getIndex');
+    Route::post('admin/categories/create', 'CategoriesController@postCreate');
+    Route::post('admin/categories/destroy', 'CategoriesController@postDestroy');
+    Route::get('admin/products', 'ProductsController@getIndex');
+    Route::post('admin/products/create', 'ProductsController@postCreate');
+    Route::post('admin/products/destroy', 'ProductsController@postDestroy');
+
+    Route::get('users/signin', 'UsersController@getSignIn');
+    Route::post('users/signin', 'UsersController@postSignIn');
+    Route::get('users/signout', 'UsersController@getSignout');
+
+    Route::get('users/newaccount', 'UsersController@getNewaccount');
+    Route::post('users/create', 'UsersController@postCreate');
+
+    Route::get('store', 'StoreController@getIndex');
+
+/*});*/
+
+
 
 
 

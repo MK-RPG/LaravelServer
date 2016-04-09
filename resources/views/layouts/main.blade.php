@@ -24,7 +24,6 @@
                     @yield('top-navigation')
 
                     <div id="user-menu">
-
                         @if(Auth::check())
                             <nav class="dropdown">
                                 <ul>
@@ -53,7 +52,6 @@
                                 </ul>
                             </nav>
                         @endif
-
                     </div><!-- end user-menu -->
                 </section><!-- end action-bar -->
             </header>
