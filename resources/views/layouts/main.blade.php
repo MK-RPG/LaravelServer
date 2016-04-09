@@ -5,6 +5,7 @@
         <title>eCommerce</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
+        <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
 
         {{ HTML::style('css/normalize.css') }}
         {{ HTML::style('css/main.css') }}
@@ -13,20 +14,16 @@
     <body>
         <div id="wrapper">
             <header>
+               
                 <section id="top-area">
-                    <p>MK GAME| Email us: <a href="mailto:office@shop.com">office@shop.com</a></p>
-                </section><!-- end top-area -->
-                <section id="action-bar">
-                    <div id="logo">
-                        <a href="/"><span id="logo-accent">MK</span>Game</a>
-                    </div><!-- end logo -->
-
+                    <p><a href="mailto:office@shop.com"></a></p>
+                </section> <!--end top-area -->
                     @yield('top-navigation')
 
                     <div id="user-menu">
 
                         @if(Auth::check())
-                            <nav class="dropdown">
+                            <nav>
                                 <ul>
                                     <li>
                                         <a href="#">{{ HTML::image('img/user-icon.gif', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.gif', Auth::user()->firstname) }}</a>
@@ -42,21 +39,46 @@
                             </nav>
                         @else
                             <nav id="signin" class="dropdown">
-                                <ul>
-                                    <li>
-                                        <a href="#">{{ HTML::image('img/user-icon.gif', 'Sign In') }} Sign In {{ HTML::image('img/down-arrow.gif', 'Sign In') }}</a>
-                                        <ul>
-                                            <li>{{ HTML::link('users/signin', 'Sign In') }}</li>
-                                            <li>{{ HTML::link('users/newaccount', 'Sign Up') }}</li>
-                                        </ul>
-                                    </li>
-                                </ul>
+                               
                             </nav>
                         @endif
 
                     </div><!-- end user-menu -->
-                </section><!-- end action-bar -->
             </header>
+
+
+
+<div>
+    <div>
+        <header>
+            <div class="container_24">
+                <div class="grid_24">
+                    <div class="left_stripe"></div>
+                    <div class="rigth_stripe"></div>
+
+                    <nav class="navigate">
+                        <ul>
+                         
+                           <li>
+                                <a href="#">{{ HTML::image('img/user-icon.gif', 'Sign In') }} Sign In {{ HTML::image('img/down-arrow.gif', 'Sign In') }}
+                                </a>
+                                    <ul>
+                                        <li>{{ HTML::link('users/signin', 'Sign In') }}</li>
+                                        <li>{{ HTML::link('users/newaccount', 'Sign Up') }}</li>
+                                    </ul>
+                           </li>
+                            <li class="li"><a href="#">Top Players</a></li>
+                            <li class="second_part"><a href="#">Shop</a></li>
+                            <li class="li"><a href="#">Profile</a></li>
+                        
+                        </ul>
+                        <div class="clear"></div>
+                    </nav>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </header>
+
 
             @yield('promo')
 
@@ -78,7 +100,13 @@
 
             <footer>
                 <section id="contact">
-                    <h3>MK GAME. You<br>can also email us at <a href="mailto:office@shop.com">office@shop.com</a></h3>
+                   <div id="connect">
+                        <h4>CONNECT WITH US</h4>
+                        <ul>
+                            <li class="twitter"><a href="#">Twitter</a></li>
+                            <li class="fb"><a href="#">Facebook</a></li>
+                        </ul>
+                    </div><!-- end connect -->
                 </section><!-- end contact -->
 
                 <hr />
@@ -112,11 +140,8 @@
 
                 <section class="clearfix">
                     <div id="copyright">
-                        <div id="logo">
-                            <a href="#"><span id="logo-accent">e</span>Commerce</a>
-                        </div><!-- end logo -->
-                        <p id="store-desc">This is a short description of the store.</p>
-                        <p id="store-copy">&copy; 2013 eCommerce. Theme designed by Adi Purdila.</p>
+                        <p id="store-desc">All Rights Reserved.</p>
+                        <p id="store-copy">&copy; 2016 Game. Design.</p>
                     </div><!-- end copyright -->
                     <div id="connect">
                         <h4>CONNECT WITH US</h4>

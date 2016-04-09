@@ -21,7 +21,8 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    background-color:#101b26;
+    background-image: url('../img/body_bg.jpg');
+    background-repeat: repeat;
 }
 
 /*
@@ -94,6 +95,89 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.body_bg { 
+    background-image: url('../img/body_bg.jpg');
+    background-repeat: repeat;
+}
+
+
+header { 
+    position:relative; 
+    min-height:261px;
+}
+header .left_stripe{ 
+    background-image:url('../img/left_stripe.png');
+    background-repeat:no-repeat; 
+    left:17px;
+}
+header .rigth_stripe{ 
+    background-image:url('../img/right_stripe.png'); 
+    background-repeat: no-repeat; 
+    right:27px;
+}
+header .navigation{ 
+    color:#9f8c5c; 
+    text-align:right;
+    padding:24px 0 0 0;
+}
+header .navigation a{
+    font-size: 13px; 
+    color:#8f7053; 
+    display:inline-block; 
+    text-shadow: 1px 0 #fff; 
+    padding:0 12px 0;
+}
+header .navigation a:hover{ 
+    text-decoration:underline;
+}
+header .navigation .last{ 
+    padding-right:0;
+}
+header .left_stripe, .rigth_stripe{ 
+    position:absolute;
+    width: 80px; 
+    height:104px; 
+}
+header h1{ 
+    text-align:center; 
+    position:absolute; 
+    width:339px;
+    height:201px; 
+    left:50%; 
+    margin-left:-169px; 
+    top:30px; 
+    z-index:999;
+}
+header h1 a {
+    display:inline-block;
+    width:339px;
+    height:201px;
+    background-repeat: no-repeat; 
+    text-decoration:none; 
+    text-indent:-9999px; 
+    z-index:88;
+}
+
+.navigate{ 
+    position:relative; 
+    height:90px;
+    padding:34px 0 0 31px; 
+    background-image:url('../img/nav_bg.png');
+    background-repeat:no-repeat; 
+    z-index:99;
+}
+
+.container_24{
+    margin:0 auto;
+    width:960px;
+}
+
+.sf-menu {
+    font-family: 'Vollkorn', serif;
+}
+
+
+
 p, h1, h2, h3, h4, h5, ul, li {
     margin: 0;
     padding: 0;
@@ -108,18 +192,12 @@ p, h1, h2, h3, h4, h5, ul, li {
 #wrapper {
     width: 1152px;
     margin: 0 auto;
-    border-left: 1px solid #aaa;
-    border-right: 1px solid #aaa;
-    border-bottom: 1px solid #aaa;
 }
 
 /* ============================================================================
    Header
    ============================================================================ */
 
-header {
-    background-color: #fff;
-}
 
 header a:link, header a:visited {
     color: #5daad0;
@@ -129,17 +207,22 @@ header a:link, header a:visited {
 /* ---- top-area ---- */
 
 #top-area {
-    height: 50px;
-    background-color: #f6f6f6;
-    padding: 0 30px;
+    height: 130px;
+    padding: 50px 30px;
     line-height: 50px;
+    background-image:url("../img/logo.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#header{
 }
 
 /* ---- action-bar --- */
 
 #action-bar {
     height: 55px;
-    padding: 35px 0 0 30px;
+    padding: 60px 0 0 30px;
     vertical-align: middle;
     position: relative;
     z-index: 2;
