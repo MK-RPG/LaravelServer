@@ -10,7 +10,8 @@
         "intervention/image": "^2.3",
         "laravelcollective/html": "5.2.*",
         "barryvdh/laravel-ide-helper": "^2.1",
-        "doctrine/dbal": "^2.5"
+        "doctrine/dbal": "^2.5",
+        "moltin/laravel-cart": "dev-master"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -50,5 +51,7 @@
     },
     "config": {
         "preferred-install": "dist"
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }

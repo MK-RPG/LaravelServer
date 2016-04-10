@@ -15,6 +15,7 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/guzzle/guzzle" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/intervention/image" />
@@ -25,6 +26,10 @@
       <excludeFolder url="file://$MODULE_DIR$/vendor/laravelcollective/html" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/league/flysystem" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mockery/mockery" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/moltin/cart" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/moltin/currency" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/moltin/laravel-cart" />
+      <excludeFolder url="file://$MODULE_DIR$/vendor/moltin/tax" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/monolog/monolog" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/mtdowling/cron-expression" />
       <excludeFolder url="file://$MODULE_DIR$/vendor/nesbot/carbon" />
@@ -87,6 +92,7 @@
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/vendor/guzzle/guzzle" />
           <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
           <root url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
           <root url="file://$MODULE_DIR$/vendor/intervention/image" />
@@ -97,6 +103,10 @@
           <root url="file://$MODULE_DIR$/vendor/laravelcollective/html" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />
           <root url="file://$MODULE_DIR$/vendor/mockery/mockery" />
+          <root url="file://$MODULE_DIR$/vendor/moltin/cart" />
+          <root url="file://$MODULE_DIR$/vendor/moltin/currency" />
+          <root url="file://$MODULE_DIR$/vendor/moltin/laravel-cart" />
+          <root url="file://$MODULE_DIR$/vendor/moltin/tax" />
           <root url="file://$MODULE_DIR$/vendor/monolog/monolog" />
           <root url="file://$MODULE_DIR$/vendor/mtdowling/cron-expression" />
           <root url="file://$MODULE_DIR$/vendor/nesbot/carbon" />
@@ -155,6 +165,7 @@
           <root url="file://$MODULE_DIR$/vendor/doctrine/instantiator" />
           <root url="file://$MODULE_DIR$/vendor/doctrine/lexer" />
           <root url="file://$MODULE_DIR$/vendor/fzaninotto/faker" />
+          <root url="file://$MODULE_DIR$/vendor/guzzle/guzzle" />
           <root url="file://$MODULE_DIR$/vendor/guzzlehttp/psr7" />
           <root url="file://$MODULE_DIR$/vendor/hamcrest/hamcrest-php" />
           <root url="file://$MODULE_DIR$/vendor/intervention/image" />
@@ -165,6 +176,10 @@
           <root url="file://$MODULE_DIR$/vendor/laravelcollective/html" />
           <root url="file://$MODULE_DIR$/vendor/league/flysystem" />
           <root url="file://$MODULE_DIR$/vendor/mockery/mockery" />
+          <root url="file://$MODULE_DIR$/vendor/moltin/cart" />
+          <root url="file://$MODULE_DIR$/vendor/moltin/currency" />
+          <root url="file://$MODULE_DIR$/vendor/moltin/laravel-cart" />
+          <root url="file://$MODULE_DIR$/vendor/moltin/tax" />
           <root url="file://$MODULE_DIR$/vendor/monolog/monolog" />
           <root url="file://$MODULE_DIR$/vendor/mtdowling/cron-expression" />
           <root url="file://$MODULE_DIR$/vendor/nesbot/carbon" />

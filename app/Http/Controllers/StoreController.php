@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use App\Product;
 use App\Category;
 use Illuminate\Support\Facades\Input;
+use Cart;
 
 use App\Http\Requests;
 
@@ -52,21 +53,21 @@ class StoreController extends Controller
             'image'=>$product->image
         ));
 
-        return Redirect::to('store/cart');
+        return redirect('store/cart');
     }
 
     public function getCart() {
-        return View::make('store.cart')->with('products', Cart::contents());
+        return view('store.cart')->with('products', Cart::contents());
     }
 
     public function getRemoveitem($identifier) {
         $item = Cart::item($identifier);
         $item->remove();
-        return Redirect::to('store/cart');
+        return redirect('store/cart');
     }
 
     public function getContact() {
-        return View::make('store.contact');
+        view('store.contact');
     }
 }
 

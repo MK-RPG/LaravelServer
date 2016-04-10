@@ -13,58 +13,53 @@
     </head>
     <body>
         <div id="wrapper">
-            <header>
-                <section id="top-area">
-                    <p><a href="mailto:office@shop.com"></a></p>
-                </section> <!--end top-area -->
-                    @yield('top-navigation')
-                    <div id="user-menu">
-                        @if(Auth::check())
-                            <nav>
-                                <ul>
-                                    <li>
-                                        <a href="#">{{ HTML::image('img/user-icon.gif', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.gif', Auth::user()->firstname) }}</a>
-                                        <ul>
-                                            @if(Auth::user()->admin == 1)
-                                                <li>{{ HTML::link('admin/categories', 'Manage Categories') }}</li>
-                                                <li>{{ HTML::link('admin/products', 'Manage Products') }}</li>
-                                            @endif
-                                            <li>{{ HTML::link('users/signout', 'Sign Out') }}</li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </nav>
-                        @else
-                            <nav id="signin" class="dropdown">
-                            </nav>
-                        @endif
-                    </div><!-- end user-menu -->
-            </header>
-
-
-
-<div>
-    <div>
         <header>
+            <section id="top-area">
+            </section> <!--end top-area -->
+            @yield('top-navigation')
+
             <div class="container_24">
                 <div class="grid_24">
                     <div class="left_stripe"></div>
                     <div class="rigth_stripe"></div>
                     <nav class="navigate">
-                        <ul>
-                           <li>
-                                <a href="#">{{ HTML::image('img/user-icon.gif', 'Sign In') }} Sign In {{ HTML::image('img/down-arrow.gif', 'Sign In') }}
-                                </a>
+                        <div id="user-menu">
+                            @if(Auth::check())
+                                <nav class="dropdown">
                                     <ul>
-                                        <li>{{ HTML::link('users/signin', 'Sign In') }}</li>
-                                        <li>{{ HTML::link('users/newaccount', 'Sign Up') }}</li>
+                                        <li>
+                                            <a href="#">{{ HTML::image('img/user-icon.gif', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.gif', Auth::user()->firstname) }}</a>
+                                            <ul>
+                                                @if(Auth::user()->admin == 1)
+                                                    <li>{{ HTML::link('admin/categories', 'Manage Categories') }}</li>
+                                                    <li>{{ HTML::link('admin/products', 'Manage Products') }}</li>
+                                                @endif
+                                                <li>{{ HTML::link('users/signout', 'Sign Out') }}</li>
+
+                                            </ul>
+                                        </li>
                                     </ul>
-                           </li>
-                            <li class="li"><a href="#">Top Players</a></li>
-                            <li class="second_part"><a href="#">Shop</a></li>
-                            <li class="li"><a href="#">Profile</a></li>
-                        
-                        </ul>
+                                </nav>
+                            @else
+                                <nav id="signin" class="dropdown">
+                                    <ul>
+                                        <li>
+                                            <a href="#">{{ HTML::image('img/user-icon.gif', 'Sign In') }} Sign In {{ HTML::image('img/down-arrow.gif', 'Sign In') }}
+                                            </a>
+                                            <ul>
+                                                <li>{{ HTML::link('login', 'Sign In') }}</li>
+                                                <li>{{ HTML::link('signup', 'Sign Up') }}</li>
+                                            </ul>
+                                        </li>
+
+                                    </ul>
+                                </nav>
+                            @endif
+                                <li class="li"><a href="#">Top Players</a></li>
+                                <li>{{ HTML::link('store', 'Shop') }}</li>
+                                <li class="li"><a href="#">Profile</a></li>
+                        </div><!-- end user-menu -->
+
                         <div class="clear"></div>
                     </nav>
                 </div>
@@ -152,7 +147,7 @@
         </div><!-- end wrapper -->
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-        <script>window.jQuery || document.write("{{ HTML::script('js/vendor/jquery-1.9.1.min.js') }}")</script>
+        {{ HTML::script('js/vendor/jquery-1.9.1.min.js') }}
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}
 

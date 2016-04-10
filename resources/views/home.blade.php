@@ -5,7 +5,7 @@
         <h1>Challange YourSelf</h1>
         <p>Most Addicting<br />
             MMORPG Game of the Year !!!.</p><br />
-        <a href="#" class="default-btn">Play Now</a>
+        <a href="/game" class="default-btn">Play Now</a>
     </div>
 </section><!-- promo -->
 @stop

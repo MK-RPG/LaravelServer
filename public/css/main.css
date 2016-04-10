@@ -158,10 +158,14 @@ header h1 a {
     height:90px;
     padding:34px 0 0 31px; 
     background-image:url('../img/nav_bg.png');
-    background-repeat:no-repeat; 
+    background-repeat:no-repeat;
     z-index:99;
 }
-.navigate li { display: inline; }
+.navigate li {
+    display: inline;
+    float: left;
+    margin-right: 30px;
+}
 
 .navigate li a {
     display: inline-block;

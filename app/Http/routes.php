@@ -40,27 +40,31 @@
 });*/
 Route::get('/', 'HomeController@getIndex');
 
-/*Route::group(['middleware' => ['web']], function () {*/
 
-
-
-    Route::get('admin/categories', 'CategoriesController@getIndex');
-    Route::post('admin/categories/create', 'CategoriesController@postCreate');
-    Route::post('admin/categories/destroy', 'CategoriesController@postDestroy');
-    Route::get('admin/products', 'ProductsController@getIndex');
-    Route::post('admin/products/create', 'ProductsController@postCreate');
-    Route::post('admin/products/destroy', 'ProductsController@postDestroy');
-
-    Route::get('users/signin', 'UsersController@getSignIn');
+    Route::get('signup', 'UsersController@getNewaccount');
+    Route::get('login', 'UsersController@getSignIn');
     Route::post('users/signin', 'UsersController@postSignIn');
     Route::get('users/signout', 'UsersController@getSignout');
 
     Route::get('users/newaccount', 'UsersController@getNewaccount');
     Route::post('users/create', 'UsersController@postCreate');
 
-    Route::get('store', 'StoreController@getIndex');
+/*    Route::get('store', 'StoreController@getIndex');*/
 
-/*});*/
+    Route::controller('store', 'StoreController');
+    Route::get('game', function () {
+            return view('game');
+        });
+
+Route::group(['middleware' => ['web','admin']], function ()
+{
+    Route::get('admin/categories', 'CategoriesController@getIndex');
+    Route::post('admin/categories/create', 'CategoriesController@postCreate');
+    Route::post('admin/categories/destroy', 'CategoriesController@postDestroy');
+    Route::get('admin/products', 'ProductsController@getIndex');
+    Route::post('admin/products/create', 'ProductsController@postCreate');
+    Route::post('admin/products/destroy', 'ProductsController@postDestroy');
+});
 
 
 
