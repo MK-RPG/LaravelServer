@@ -51,10 +51,17 @@ Route::get('/', 'HomeController@getIndex');
 
 /*    Route::get('store', 'StoreController@getIndex');*/
 
+
+
+
+Route::group(['middleware' => ['web','auth']], function ()
+{
     Route::controller('store', 'StoreController');
     Route::get('game', function () {
-            return view('game');
-        });
+        return view('game');
+    });
+
+});
 
 Route::group(['middleware' => ['web','admin']], function ()
 {
