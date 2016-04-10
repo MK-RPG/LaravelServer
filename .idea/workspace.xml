@@ -2,52 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="64ae0262-a528-4a37-a934-4cde161a2f16" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/Originals/down-arrow.gif" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/fb.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/page_background.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/photothumb.db" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_09_21-laptop-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_09_49-desktop-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_10_20-desktop-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_10_44-laptop-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_11_05-smartphone-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_11_22-smartphone-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_11_45-laptop-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_12_04-tablet-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_12_32-laptop-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_12_52-tablet-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_14_39-desktop-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_15_32-laptop-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_16_30-tablet-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_17_09-laptop-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_18_05-desktop-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/2013-09-01-08_18_33-laptop-upload.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/profile (4).png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/profile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/shop.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/signin.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/slide.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/top.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/resources/views/welcome.blade.php" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/Vagrantfile" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/body_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/connect.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/left_stripe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/profile.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/right_stripe.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/img/sword.jpg" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/img/down-arrow.png" afterPath="$PROJECT_DIR$/public/img/down-arrow.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Test1.iml" afterPath="$PROJECT_DIR$/.idea/Test1.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/Game" afterPath="$PROJECT_DIR$/public/js/Game" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/app.php" afterPath="$PROJECT_DIR$/config/app.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/home.blade.php" afterPath="$PROJECT_DIR$/resources/views/home.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" afterPath="$PROJECT_DIR$/resources/views/layouts/main.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/index.blade.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/users/signin.blade.php" afterPath="$PROJECT_DIR$/resources/views/users/signin.blade.php" />
     </list>
     <ignored path="Test1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -106,10 +63,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="438">
+            <state relative-caret-position="-2946">
               <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
               <folding />
             </state>
@@ -136,7 +93,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="routes.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="-516">
@@ -347,38 +304,6 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test1" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Test1" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="img" />
-              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -457,16 +382,16 @@
       <workItem from="1459840226778" duration="132721000" />
       <workItem from="1460276641069" duration="9834000" />
       <workItem from="1460311603434" duration="614000" />
-      <workItem from="1460314416377" duration="4760000" />
+      <workItem from="1460314416377" duration="5201000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="152854000" />
+    <option name="totallyTimeSpent" value="153295000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1420" y="-8" width="1874" height="1096" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19537137" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -475,7 +400,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17115177" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33075434" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33075434" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -765,11 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/img/rsz.jpg">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/StoreController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -823,16 +743,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-516">
-          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
-          <folding>
-            <element signature="e#7#392#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/game.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -859,9 +769,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="438">
+        <state relative-caret-position="-2946">
           <caret line="29" column="16" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="16" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/rsz.jpg">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-516">
+          <caret line="31" column="29" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="29" />
+          <folding>
+            <element signature="e#7#392#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
