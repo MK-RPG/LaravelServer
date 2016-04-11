@@ -5,22 +5,22 @@ var DataManager = function($){
             'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
         }
     })
-    var score = 0;
+    var collectedCoins = 0;
 
     return{
         getHightScore:function (fn) {
             $.get('getscore',function(data){
-                score = data;
-                console.log(score,'score')
+                collectedCoins = data;
+                console.log(collectedCoins,'collectedCoins')
                 fn(data);
             });
         },
         getInternalData:function () {
-            return score;
+            return collectedCoins;
         },
-        postHighscore: function (scores) {
-            console.log(scores)
-            $.post('postscore',{score:scores},function(){
+        postHighscore: function (collectedCoins) {
+            console.log(collectedCoins)
+            $.post('postscore',{collectedCoins:collectedCoins},function(){
                 console.log('Data sent');
             });
         }

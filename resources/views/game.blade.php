@@ -4,6 +4,7 @@
 
     </div>
     {{ HTML::script('js/Game/js/phaser.js') }}
+    {{ HTML::script('js/Game/js/DataManager.js') }}
     {{ HTML::script('js/Game/js/Boot.js') }}
     {{ HTML::script('js/Game/js/Preload.js') }}
     {{ HTML::script('js/Game/js/Game.js') }}

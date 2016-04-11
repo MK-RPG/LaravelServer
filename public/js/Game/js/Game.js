@@ -198,4 +198,5 @@ var speed = 500;
 
 TopDownGame.Game.prototype.gameOver = function(){
 	this.state.start('GameOver');
+    console.log (DataManager.getInternalData())
 }
