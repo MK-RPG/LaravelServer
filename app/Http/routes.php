@@ -72,9 +72,9 @@ Route::group(['middleware' => ['web','admin']], function ()
     Route::post('admin/products/destroy', 'ProductsController@postDestroy');
 });
 
-Route::get('/game', 'GameController@index');
-Route::get('/getscore', 'GameController@getScore');
-Route::post('/postscore', 'GameController@postScore');
+Route::get('/game', 'GameSaveController@index');
+Route::get('/getscore', 'GameSaveController@getScore');
+Route::post('/postscore', 'GameSaveController@postScore');
 
 
 
