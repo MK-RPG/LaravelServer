@@ -1,29 +1,7 @@
 @extends('layouts.main')
 
 @section('top-navigation')
-    <nav class="dropdown">
-        <ul>
-            <li>
-                <a href="#">Shop by Category {{ HTML::image('img/down-arrow.gif', 'Shop by Category') }}</a>
-                <ul>
-                    {{--@foreach($catnav as $cat)--}}
-                    {{--<li>{{ HTML::link('/store/category/'.$cat->id, $cat->name) }}</li>--}}
-                    {{--@endforeach--}}
-                </ul>
-            </li>
-        </ul>
-    </nav>
-
-    <div id="search-form">
-        {{ Form::open(array('url'=>'store/search', 'method'=>'get')) }}
-        {{ Form::text('keyword', null, array('placeholder'=>'Search by keyword', 'class'=>'search')) }}
-        {{ Form::submit('Search', array('class'=>'search submit')) }}
-        {{ Form::close() }}
-    </div><!-- end search-form -->
-
-    <div id="view-cart">
-        <a href="store/cart">{{ HTML::image('img/blue-cart.gif', 'View Cart') }} View Cart</a>
-    </div><!-- end view-cart -->
+ 
 @stop
 
 @section('promo')
@@ -34,6 +12,30 @@
 @stop
 
 @section('content')
+
+   <nav class="dropdown">
+        <ul>
+            <li style="margin-left: 620px;">
+                <a href="#">Shop by Category {{ HTML::image('img/down-arrow.gif', 'Shop by Category') }}</a>
+                <ul>
+                    {{--@foreach($catnav as $cat)--}}
+                    {{--<li>{{ HTML::link('/store/category/'.$cat->id, $cat->name) }}</li>--}}
+                    {{--@endforeach--}}
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div id="search-form" style="margin-left: 620px;">
+        {{ Form::open(array('url'=>'store/search', 'method'=>'get')) }}
+        {{ Form::text('keyword', null, array('placeholder'=>'Search...', 'class'=>'search')) }}
+        {{ Form::submit('Search', array('class'=>'search submit')) }}
+        {{ Form::close() }}
+    </div><!-- end search-form -->
+
+    <div id="view-cart" style="margin-left: 620px;">
+        <a href="store/cart"><img src="img/blue-cart.png">View Cart</a>
+    </div><!-- end view-cart -->
 
 	<h2>All Products</h2>
     <div id="products">
