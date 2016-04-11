@@ -64,7 +64,7 @@ class UsersController extends Controller {
             return redirect('/')->with('message', 'Thanks for signing in');
         }
 
-        return redirect('users/signin')->with('message', 'Your email/password was incorrect');
+        return back()->with('message', 'Your email/password was incorrect');
     }
 
     public function getSignout() {

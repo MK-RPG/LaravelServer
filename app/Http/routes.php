@@ -53,7 +53,6 @@ Route::get('/', 'HomeController@getIndex');
 
 
 
-
 Route::group(['middleware' => ['web','auth']], function ()
 {
     Route::controller('store', 'StoreController');
@@ -72,6 +71,10 @@ Route::group(['middleware' => ['web','admin']], function ()
     Route::post('admin/products/create', 'ProductsController@postCreate');
     Route::post('admin/products/destroy', 'ProductsController@postDestroy');
 });
+
+Route::get('/game', 'GameSaveController@index');
+Route::get('/getscore', 'GameSaveController@getScore');
+Route::post('/postscore', 'GameSaveController@postScore');
 
 
 

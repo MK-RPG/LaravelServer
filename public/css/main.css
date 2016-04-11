@@ -21,9 +21,15 @@ textarea {
 body {
     font-size: 1em;
     line-height: 1.4;
-    background-image: url('../img/body_bg.jpg');
-    background-repeat: repeat;
+    background-color: #3f3f3f;
+    background-image: url("../img/page_background.jpg");
+    background-position: top center;
+    background-repeat: repeat-y;
+    margin: 0;
+    padding: 0;
+    color: #000;
 }
+
 
 /*
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -37,7 +43,7 @@ body {
 }
 
 ::selection {
-    background: #b3d4fc;
+    background: black;
     text-shadow: none;
 }
 
@@ -49,11 +55,19 @@ hr {
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid black;
     margin: 0;
     padding: 0;
 }
 
+.clicker{
+    display:block;
+    width:20px;
+    height:10px;
+    position:absolute;
+    top:20px;
+    left:100px;
+}
 /*
  * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
  */
@@ -95,24 +109,24 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-.body_bg { 
+.body_bg {
     background-image: url('../img/body_bg.jpg');
     background-repeat: repeat;
 }
 
 
-header { 
-    position:relative; 
+header {
+    position:relative;
     min-height:261px;
 }
-header .left_stripe{ 
+header .left_stripe{
     background-image:url('../img/left_stripe.png');
-    background-repeat:no-repeat; 
+    background-repeat:no-repeat;
     left:17px;
 }
-header .rigth_stripe{ 
-    background-image:url('../img/right_stripe.png'); 
-    background-repeat: no-repeat; 
+header .rigth_stripe{
+    background-image:url('../img/right_stripe.png');
+    background-repeat: no-repeat;
     right:27px;
 }
 
@@ -125,46 +139,46 @@ header .navigation a{
 header .navigation a:hover{
     text-decoration:underline;
 }
-header .navigation .last{ 
+header .navigation .last{
     padding-right:0;
 }
-header .left_stripe, .rigth_stripe{ 
+header .left_stripe, .rigth_stripe{
     position:absolute;
-    width: 80px; 
-    height:104px; 
+    width: 80px;
+    height:104px;
 }
-header h1{ 
-    text-align:center; 
-    position:absolute; 
+header h1{
+    text-align:center;
+    position:absolute;
     width:339px;
-    height:201px; 
-    left:50%; 
-    margin-left:-169px; 
-    top:30px; 
+    height:201px;
+    left:50%;
+    margin-left:-169px;
+    top:30px;
     z-index:999;
 }
 header h1 a {
     display:inline-block;
     width:339px;
     height:201px;
-    background-repeat: no-repeat; 
-    text-decoration:none; 
-    text-indent:-9999px; 
+    background-repeat: no-repeat;
+    text-decoration:none;
+    text-indent:-9999px;
     z-index:88;
 }
 
 .navigate{
     position:relative;
-    height:90px;
-    padding:34px 0 0 31px; 
-    background-image:url('../img/nav_bg.png');
-    background-repeat:no-repeat;
+    height:80px;
+    padding:35px 0 0 100px;
     z-index:99;
+    font-family: 'Limelight', cursive;
+    font-size: 20px;
 }
 .navigate li {
     display: inline;
-    float: left;
-    margin-right: 30px;
+    float:left;
+    margin-right:90px;
 }
 
 .navigate li a {
@@ -173,7 +187,6 @@ header h1 a {
 
 .container_24{
     margin:0 auto;
-    width:960px;
 }
 
 .sf-menu {
@@ -183,8 +196,6 @@ header h1 a {
 p, h1, h2, h3, h4, h5, ul, li {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #9dbb6f;
 }
 
 /* ============================================================================
@@ -202,7 +213,7 @@ p, h1, h2, h3, h4, h5, ul, li {
 
 
 header a:link, header a:visited {
-    color: #5daad0;
+    color: black;
     text-decoration: none;
 }
 
@@ -347,13 +358,7 @@ header a:link, header a:visited {
 /* ============================================================================
    Promo
    ============================================================================ */
-#promo {
-    height: 400px;
-    padding: 0 30px;
-    background: url('../img/promo.jpg');
-    background-size: 100% 100%;
-    background-position: center;
-}
+
 
 
 #promo-main {
@@ -522,8 +527,11 @@ header a:link, header a:visited {
 }
 
 #main-content h2, #main-content h3 {
-    color: #2e373f;
+    color: black;
     margin-bottom: 20px;
+    font-family: 'Limelight', cursive;
+    font-size: 20px;
+
 }
 
 #main-content h3 {
@@ -736,16 +744,18 @@ header a:link, header a:visited {
     width: 400px;
     margin: 0 auto 30px auto;
     padding: 20px;
-    border: 1px solid #eee;
+    border: 1px solid black;
     border-radius: 10px;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     color: #2e373f;
+    font-family: 'Limelight', cursive;
+
 }
 
 #new-account h1,
 #personal-details h1 {
-    font-size: 16px;
+    font-size: 24px;
     font-weight: normal;
     margin-bottom: 15px;
 }
@@ -754,6 +764,7 @@ header a:link, header a:visited {
 #personal-details label {
     display: block;
     margin-bottom: 5px;
+    font-size: 20px;
 }
 
 #new-account p,
@@ -785,6 +796,8 @@ header a:link, header a:visited {
     padding: 10px 0 30px 0;
     color: #2e373f;
     position: relative;
+    font-family: 'Limelight', cursive;
+
 }
 
 #main-content #signin-form {
@@ -793,7 +806,7 @@ header a:link, header a:visited {
 }
 
 #signin-form {
-    background-color: #f6f6f6;
+    border:1px solid black;
 }
 
 #signin-form h1, #signup h2 {
@@ -821,7 +834,7 @@ header a:link, header a:visited {
 #signup h3 {
     font-size: 14px;
     font-weight: normal;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
 }
 
 /* ============================================================================
@@ -913,6 +926,11 @@ header a:link, header a:visited {
     color: #5daad0;
 }
 
+#contact {
+    font-family: 'Limelight', cursive;
+    font-size: 18px;
+    color:black;
+}
 /* ============================================================================
    contact-us
    ============================================================================ */
@@ -1064,16 +1082,15 @@ header a:link, header a:visited {
    ============================================================================ */
 
 footer h4 {
-    color: #c3c3c3;
+    color: black;
     margin-bottom: 15px;
 }
 
 /* --- contact --- */
 
 footer #contact {
-    background-color: #faf9f9;
-    height: 167px;
     text-align: center;
+    margin-left: 100px;
 }
 
 footer #contact h3 {
@@ -1091,12 +1108,13 @@ footer #contact a:link, footer #contact a:visited {
 footer #links {
     text-align: center;
     padding: 20px 0;
+    font-family: 'Limelight', cursive;
 }
 
 footer #links a:link, footer #links a:visited {
     color: #2e373f;
     text-decoration: none;
-} 
+}
 
 footer #links ul {
     margin-left: 13px;
@@ -1119,9 +1137,12 @@ footer #my-account, footer #info {
 
 footer #copyright, footer #connect, footer #payments {
     float: left;
+    font-family: 'Limelight', cursive;
+
+
 }
 
-footer #copyright, footer #connect {
+footer #copyright{
     margin-right: 130px;
 }
 
@@ -1134,7 +1155,7 @@ footer #copyright #store-desc {
 }
 
 footer #copyright #store-copy {
-    color: #c3c3c3;
+    color: black;
 }
 
 footer #logo {
@@ -1164,12 +1185,10 @@ footer #connect ul {
     margin-left: 30px;
 }
 
-footer #connect ul li.twitter {
-    list-style-image: url(../img/twitter.gif);
-}
-
 footer #connect ul li.fb {
-    list-style-image: url(../img/fb.gif);
+    list-style-image: url(../img/fb.png);
+    margin-right:30px;
+    margin-left: 80px;
 }
 
 /* ============================================================================
@@ -1177,15 +1196,23 @@ footer #connect ul li.fb {
    ============================================================================ */
 
 section#promo .default-btn, .default-btn {
-    background-color: #5daad0;
-    color: #fff;
-    padding: 15px 35px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    box-shadow: 0px 5px 0px #467f9c;
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 10px 12px;
+    margin-right: 12px;
+    display: inline-block;
     text-decoration: none;
+    font-family: 'Limelight', cursive;
+    min-width: 120px;
 }
+
+.default-btn:hover, .default-btn:active{
+    color:#fff;
+    background:#80b3ff
+}
+
 
 .secondary-btn {
     background-color: #2e373f;
@@ -1259,15 +1286,26 @@ button.cart-btn {
 }
 
 .secondary-cart-btn {
-    background-color: #5daad0;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    box-shadow: 0px 5px 0px #467f9c;
-    border: none;
+    color: black;
+    background: transparent;
+    border: 1px solid black;
+    font-size: 20px;
+    padding: 10px 12px;
+    font-weight: normal;
+    margin: 6px 0;
+    margin-right: 12px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Limelight', cursive;
+    min-width: 120px;
 }
+
+.secondary-cart-btn:hover,.secondary-cart-btn:active {
+    color:#fff;
+    background:#80b3ff;
+}
+
+
 
 /* ==========================================================================
    Misc.
@@ -1275,11 +1313,13 @@ button.cart-btn {
 
 .alert {
     background-color: #faf9f9;
-    color: #5daad0;
+    color: black;
     border: 1px solid #ccc;
     padding: 10px;
     margin: 10px;
     width: 1050px;
+    font-family: 'Limelight', cursive;
+    font-size: 20px;
 }
 
 
@@ -1404,9 +1444,9 @@ button.cart-btn {
 }
 
 @media print,
-       (-o-min-device-pixel-ratio: 5/4),
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 120dpi) {
+(-o-min-device-pixel-ratio: 5/4),
+(-webkit-min-device-pixel-ratio: 1.25),
+(min-resolution: 120dpi) {
     /* Style adjustments for high resolution devices */
 }
 

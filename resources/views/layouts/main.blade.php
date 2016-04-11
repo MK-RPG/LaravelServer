@@ -5,7 +5,7 @@
         <title>eCommerce</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
-        <link href='https://fonts.googleapis.com/css?family=Walter+Turncoat' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Limelight' rel='stylesheet' type='text/css'>
 
         {{ HTML::style('css/normalize.css') }}
         {{ HTML::style('css/main.css') }}
@@ -20,15 +20,13 @@
 
             <div class="container_24">
                 <div class="grid_24">
-                    <div class="left_stripe"></div>
-                    <div class="rigth_stripe"></div>
                     <nav class="navigate">
                         <div id="user-menu">
                             @if(Auth::check())
                                 <nav class="dropdown">
                                     <ul>
                                         <li>
-                                            <a href="#">{{ HTML::image('img/user-icon.gif', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.gif', Auth::user()->firstname) }}</a>
+                                            <a href="#">{{ HTML::image('img/signin.png', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.png', Auth::user()->firstname) }}</a>
                                             <ul>
                                                 @if(Auth::user()->admin == 1)
                                                     <li>{{ HTML::link('admin/categories', 'Manage Categories') }}</li>
@@ -55,9 +53,9 @@
                                     </ul>
                                 </nav>
                             @endif
-                                <li class="li"><a href="#">Top Players</a></li>
-                                <li>{{ HTML::link('store', 'Shop') }}</li>
-                                <li class="li"><a href="#">Profile</a></li>
+                                <li class="li"><a href="#"><img src="img/top.png">Top Players</a></li>
+                                <li><img src="img/shop.png">{{ HTML::link('store', 'Shop') }}</li>
+                                <li class="li"><a href="#"><img src="img/profile.png">Profile</a></li>
                         </div><!-- end user-menu -->
 
                         <div class="clear"></div>
@@ -72,8 +70,6 @@
 
             @yield('search-keyword')
 
-            <hr />
-
             <section id="main-content" class="clearfix">
                 @if (Session::has('message'))
                     <p class="alert">{{ Session::get('message') }}</p>
@@ -82,7 +78,7 @@
                 @yield('content')
             </section><!-- end main-content -->
 
-            <hr />
+            <hr/>
 
             @yield('pagination')
 
@@ -91,13 +87,12 @@
                    <div id="connect">
                         <h4>CONNECT WITH US</h4>
                         <ul>
-                            <li class="twitter"><a href="#">Twitter</a></li>
-                            <li class="fb"><a href="#">Facebook</a></li>
+                            <a href="#"><li class="fb"></li></a>
                         </ul>
                     </div><!-- end connect -->
                 </section><!-- end contact -->
 
-                <hr />
+                
 
                 <section id="links">
                     <div id="my-account">
@@ -128,16 +123,10 @@
 
                 <section class="clearfix">
                     <div id="copyright">
-                        <p id="store-desc">All Rights Reserved.</p>
-                        <p id="store-copy">&copy; 2016 Game. Design.</p>
+                        <p id="store-desc" style="color: black">All Rights Reserved.</p>
+                        <p id="store-copy">&copy; 2016 TheMazeRunnerGame.</p>
                     </div><!-- end copyright -->
-                    <div id="connect">
-                        <h4>CONNECT WITH US</h4>
-                        <ul>
-                            <li class="twitter"><a href="#">Twitter</a></li>
-                            <li class="fb"><a href="#">Facebook</a></li>
-                        </ul>
-                    </div><!-- end connect -->
+                
                     <div id="payments">
                         <h4>SUPPORTED PAYMENT METHODS</h4>
                         {{ HTML::image('img/payment-methods.gif', 'Supported Payment Methods') }}

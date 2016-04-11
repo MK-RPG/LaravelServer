@@ -158,7 +158,8 @@ return [
         Collective\Html\HtmlServiceProvider::class,
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         Intervention\Image\ImageServiceProvider::class,
-        Moltin\Cart\CartServiceProvider::class
+        Moltin\Cart\CartServiceProvider::class,
+        Anouar\Paypalpayment\PaypalpaymentServiceProvider::class
 
     ],
 
@@ -208,7 +209,8 @@ return [
         'Form' => Collective\Html\FormFacade::class,
         'HTML' => Collective\Html\HtmlFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
-        'Cart' => Moltin\Cart\Facade::class
+        'Cart' => Moltin\Cart\Facade::class,
+        'Paypalpayment'   => Anouar\Paypalpayment\Facades\PaypalPayment::class
 
     ],
 
