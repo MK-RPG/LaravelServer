@@ -8,6 +8,8 @@ TopDownGame.Game = function(){
   this.timerImage;
    
   this.music;
+  this.collectItems = {};
+  this.collectItems.coins = 0;
     
 };
 
@@ -141,7 +143,7 @@ this.music.backgroundSound.play();
   },
   update: function() {
    var _this = this;
-   
+
     //collision
     this.game.physics.arcade.collide(this.player, this.blockedLayer);
     this.game.physics.arcade.overlap(this.player, this.items, function(player,collectable){
@@ -150,15 +152,15 @@ this.music.backgroundSound.play();
         _this.music.collectCoin.play();
         _this.collectedCoins++;
           _this.text.text = 'Coins: ' + _this.collectedCoins;
+          _this.collectItems.coins = _this.collectedCoins;
 
       }
       else if(collectable.key == 'bluecup'){
         _this.music.collectTime.play();
             _this.seconds += 10;
             _this.timerText.setText(_this.seconds);
-            
-          
       }
+
       collectable.destroy();
 
       //console.log(collectable);

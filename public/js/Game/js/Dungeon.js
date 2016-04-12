@@ -238,6 +238,8 @@ TopDownGame.Dungeon.prototype.die = function(){
 
 TopDownGame.Dungeon.prototype.gameOver = function(){
   this.music.backgroundSound.stop();
+  DataManager.uploadScore(this.collectedCoins);
+
   this.state.start('GameOver');
 
 }

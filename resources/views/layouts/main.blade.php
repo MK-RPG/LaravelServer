@@ -11,6 +11,8 @@
         {{ HTML::style('css/main.css') }}
         @yield('bootstrap')
         {{ HTML::script('js/vendor/modernizr-2.6.2.min.js') }}
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
     </head>
     <body>
         <div id="wrapper">
@@ -140,7 +142,6 @@
             </footer>
         </div><!-- end wrapper -->
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
         {{ HTML::script('js/vendor/jquery-1.9.1.min.js') }}
         {{ HTML::script('js/plugins.js') }}
         {{ HTML::script('js/main.js') }}

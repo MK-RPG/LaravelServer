@@ -1,4 +1,4 @@
-var DataManager = function($){
+var DataManager = function(){
 
     $.ajaxSetup({
         headers: {
@@ -23,6 +23,11 @@ var DataManager = function($){
             $.post('postscore',{collectedCoins:collectedCoins},function(){
                 console.log('Data sent');
             });
+        },
+        uploadScore: function(coins) {
+            $.post('postscore',{collectedCoins:collectedCoins},function(){
+                console.log(arguments);
+            });
         }
     }
-}(jQuery);
+}();
