@@ -48,12 +48,7 @@
                     <input type="hidden" name="last_name" value="{{ Auth::user()->lastname }}">
                     <input type="hidden" name="email" value="{{ Auth::user()->email }}">
 
-<<<<<<< HEAD
-                    {{ HTML::link('/', 'Continue Shopping', array('class'=>'secondary-cart-btn')) }}
-=======
-
                     {{ HTML::link('/store', 'Continue Shopping', array('class'=>'secondary-cart-btn')) }}
->>>>>>> e6a08b9aee349683c50f15dd3e075bd58b0c6e38
                     <input type="submit" value="Pay With PAYPAL" class="secondary-cart-btn">
 
                 </td>

@@ -44,7 +44,7 @@ class ProductsController extends Controller {
             $image = Input::file('image');
             $filename  = time() . '.' . $image->getClientOriginalExtension();
             $path = public_path('img/products/' . $filename);
-            Image::make($image->getRealPath())->resize(468, 249)->save($path);
+            Image::make($image->getRealPath())->resize(350, 400)->save($path);
             $product->image = 'img/products/'.$filename;
             $product->save();
             echo 'pass';

@@ -61,9 +61,9 @@
                                     </ul>
                                 </nav>
                             @endif
-                                <li class="li"><a href="/ranking"><img src="img/top.png">Top Players</a></li>
-                                <li><a href="#"><img src="img/shop.png">{{ HTML::link('store', 'Shop') }}</a></li>
-                                <li class="li"><a href="#"><img src="img/profile.png">Profile</a></li>
+                                <li class="li"><a href="/ranking"><img src="/img/top.png">Top Players</a></li>
+                                <li><a href="#"><img src="/img/shop.png">{{ HTML::link('store', 'Shop') }}</a></li>
+                                <li class="li"><a href="/game"><img src="/img/play.png">Play</a></li>
                         </div><!-- end user-menu -->
 
                         <div class="clear"></div>
