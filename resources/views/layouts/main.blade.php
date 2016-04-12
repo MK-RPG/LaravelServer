@@ -26,7 +26,7 @@
             
             @if(Auth::check())
                 <div>
-                <h1 id="gold">You have {{Auth::user()->gold}} coins.</h1>
+                <span id="gold">You have {{Auth::user()->gold}} coins.</span>
                 </div>
             @endif
             <div class="container_24">
@@ -35,7 +35,7 @@
                         <div id="user-menu">
                             @if(Auth::check())
                                 <nav class="dropdown">
-                                
+                              
                                     <ul>
                                         <li id="login">
                                             <a href="#" id="login-trigger">{{ HTML::image('img/signin.png', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.png', Auth::user()->firstname) }}</a>
