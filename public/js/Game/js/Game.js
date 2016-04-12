@@ -5,17 +5,21 @@ TopDownGame.Game = function(){
   this.collectedCoins = 0;
   
   this.timerText;
-    this.timerImage;
+  this.timerImage;
    
-    this.music;
+  this.music;
     
 };
 
 TopDownGame.Game.prototype = {
   create: function() {
-    
-  this.music = this.game.add.audio('village');
-  this.music.play();
+
+this.music = {};
+this.music.backgroundSound = this.game.add.audio('village');
+this.music.collectCoin = this.game.add.audio('collect');
+this.music.collectTime = this.game.add.audio('time');
+
+this.music.backgroundSound.play();
     
     this.seconds = 60;    
   var _this = this;
@@ -143,11 +147,13 @@ TopDownGame.Game.prototype = {
     this.game.physics.arcade.overlap(this.player, this.items, function(player,collectable){
       
       if(collectable.key == 'greencup') {
+        _this.music.collectCoin.play();
         _this.collectedCoins++;
           _this.text.text = 'Coins: ' + _this.collectedCoins;
 
       }
       else if(collectable.key == 'bluecup'){
+        _this.music.collectTime.play();
             _this.seconds += 10;
             _this.timerText.setText(_this.seconds);
             
@@ -187,10 +193,10 @@ var speed = 500;
 
   },
   enterDoor: function(player, door) {
-   //console.log('entering door that will take you to '+door.targetTilemap+' on x:'+door.targetX+' and y:'+door.targetY);
+    this.music.backgroundSound.stop();
     this.state.start('Dungeon');
     this.seconds = -1;
-    console.log(this.state.timerIndex);
+    //console.log(this.state.timerIndex);
     clearInterval(this.state.timerIndex);
   },
 };

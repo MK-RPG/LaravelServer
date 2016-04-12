@@ -13,9 +13,13 @@ TopDownGame.Dungeon = function(){
 TopDownGame.Dungeon.prototype = {
   create: function() {
     
-  //this.musiz.stop();  
-  this.music = this.game.add.audio('dungeonSound');
-  this.music.play();
+    
+this.music = {};
+this.music.backgroundSound = this.game.add.audio('dungeonSound');
+this.music.collectCoin = this.game.add.audio('collect');
+this.music.collectTime = this.game.add.audio('time');
+
+this.music.backgroundSound.play();
     
   var _this = this;
     
@@ -130,7 +134,7 @@ TopDownGame.Dungeon.prototype = {
               m.kill();
           }, this);
       }
-      console.log(this.mummy);
+     
     },
     
 
@@ -177,11 +181,13 @@ TopDownGame.Dungeon.prototype = {
     this.game.physics.arcade.overlap(this.player, this.items, function(player,collectable){
       
       if(collectable.key == 'greencup') {
+          _this.music.collectCoin.play();
         _this.collectedCoins++;
           _this.text.text = 'Coins: ' + _this.collectedCoins;
 
       }
       else if(collectable.key == 'bluecup'){
+          _this.music.collectTime.play();
             _this.seconds += 10;
             _this.timerText.setText(_this.seconds);
             
@@ -231,6 +237,8 @@ TopDownGame.Dungeon.prototype.die = function(){
 }
 
 TopDownGame.Dungeon.prototype.gameOver = function(){
+  this.music.backgroundSound.stop();
   this.state.start('GameOver');
+
 }
     
