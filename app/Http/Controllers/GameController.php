@@ -6,8 +6,9 @@ namespace App\Http\Controllers;
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests;
-use Illuminate\Http\Request;
+//use App\Http\Requests;
+//use Illuminate\Http\Request;
+
 use Illuminate\Http\Response;
 use Auth;
 
@@ -18,10 +19,10 @@ class GameController extends Controller
      *
      * @return void
      */
-    public function __construct()
-    {
-        $this->middleware('auth');
-    }
+ //   public function __construct()
+//    {
+//        $this->middleware('auth');
+//    }
 
     public function index()
     {
@@ -36,11 +37,11 @@ class GameController extends Controller
         return $gold;
     }
 
-    public function postGold()
+    public function postScore()
     {
         $user = Auth::user();
         $gold = request()->input('gold');
-        $user->gold = $gold;
-        $user->save;
+        $user->gold += $gold;
+        $user->save();
     }
 }
