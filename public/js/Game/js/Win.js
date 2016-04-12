@@ -1,11 +1,11 @@
-TopDownGame.GameOver = function(game) {
+TopDownGame.Win = function(game) {
     this.winner;
 }
 
-TopDownGame.GameOver.prototype = {
+TopDownGame.Win.prototype = {
 
     create: function() {
-        this.win = this.add.image(0, 0, 'gameOverScreen');
+        this.winner = this.add.image(0, 0, 'winner');
         this.winner.scale.setTo(0.667,0.667);
         this.winner.inputEnabled = true;
         this.winner.events.onInputDown.addOnce(this.showStartMenu, this);

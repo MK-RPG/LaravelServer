@@ -2,17 +2,23 @@ var TopDownGame = TopDownGame || {};
 
 
 TopDownGame.Dungeon = function(){
-	this.collectedCoins = 0;
-	
-	this.timerText;
+  this.collectedCoins = 0;
+  
+  this.timerText;
     this.timerImage;
     this.seconds = 60;
+    this.music;
 };
 
 TopDownGame.Dungeon.prototype = {
   create: function() {
-	var _this = this;
-	  
+    
+  //this.musiz.stop();  
+  this.music = this.game.add.audio('dungeonSound');
+  this.music.play();
+    
+  var _this = this;
+    
     this.map = this.game.add.tilemap('dungeon');
 
     this.map.addTilesetImage('dungeon', 'dungeonTile');
@@ -30,7 +36,8 @@ TopDownGame.Dungeon.prototype = {
     
     
     this.createItems();
-    this.createDoors();    
+    this.createDoors();
+    this.createEnemy();
 
     //create player
     var result = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
@@ -49,28 +56,37 @@ TopDownGame.Dungeon.prototype = {
     this.player.body.drag = 300;
     
 
+    for(var i = 0;i < 10; i++){
+        var x = this.game.rnd.realInRange(0, 700);
+        var y = this.game.rnd.realInRange(0,700);
+        var c =  this.mummy.getFirstExists(false).reset(x, y);
+        c.scale.setTo(1,1);
+        this.mummyMove = this.game.add.tween(c).to({x:this.player.body.position.x},
+            1500,Phaser.Easing.Linear.None,true,0,1200,true);
+    }
+    
     //camera follows the player
     this.game.camera.follow(this.player);
 
     this.cursors = this.game.input.keyboard.createCursorKeys();
 
     this.text = this.game.add.text(20, 20, "Coins: ", { font: "30px Arial", fill: "#fff", align: "center" });
-	this.text.fixedToCamera = true;
-	var timerIndex = null;
+  this.text.fixedToCamera = true;
+  var timerIndex = null;
     function timer() {
-  	 
-  	timerIndex = setTimeout(function() {
-  		  _this.seconds -= 1;
-  		 _this.timerText.setText(_this.seconds);
-  		 timer();
-  		 
-  		 if(_this.seconds <= 0) {
-  	            _this.gameOver();
-  	            clearInterval(timerIndex);
-  	            _this.seconds = 60;
-  	            }
-  	  },1000);
-  	 
+     
+    timerIndex = setTimeout(function() {
+        _this.seconds -= 1;
+       _this.timerText.setText(_this.seconds);
+       timer();
+       
+       if(_this.seconds <= 0) {
+                _this.gameOver();
+                clearInterval(timerIndex);
+                _this.seconds = 60;
+                }
+      },1000);
+     
     }
     
     timer();
@@ -95,6 +111,28 @@ TopDownGame.Dungeon.prototype = {
       this.createFromTiledObject(element, this.doors);
     }, this);
   },
+  
+  createEnemy: function() {
+      //create doors
+      this.mummy = this.game.add.group();
+      this.mummy.enableBody = true;
+      
+      for (var i = 0; i < 150; i++)
+      {
+          var m = this.mummy.create(0, 0, 'mummy');
+          m.scale.y = 0.5;
+          m.name = 'mummy' + i;
+          m.exists = false;
+          m.visible = false;
+          m.checkWorldBounds = true;
+          
+          m.events.onOutOfBounds.add(function(m){
+              m.kill();
+          }, this);
+      }
+      console.log(this.mummy);
+    },
+    
 
   findObjectsByType: function(type, map, layer) {
     var result = new Array();
@@ -128,26 +166,30 @@ TopDownGame.Dungeon.prototype = {
       
   },
      update: function() {
-	 var _this = this;
-	 
+   var _this = this;
+   
     //collision
     this.game.physics.arcade.collide(this.player, this.blockedLayer);
+    this.game.physics.arcade.overlap(this.player, this.mummy, function(player,mummy){
+      player.kill();
+      _this.gameOver();
+    });
     this.game.physics.arcade.overlap(this.player, this.items, function(player,collectable){
-    	
-    	if(collectable.key == 'greencup') {
-    		_this.collectedCoins++;
-        	_this.text.text = 'Coins: ' + _this.collectedCoins;
+      
+      if(collectable.key == 'greencup') {
+        _this.collectedCoins++;
+          _this.text.text = 'Coins: ' + _this.collectedCoins;
 
-    	}
-    	else if(collectable.key == 'bluecup'){
-    	      _this.seconds += 10;
-    	      _this.timerText.setText(_this.seconds);
-    	      
-    	    
-    	}
-    	collectable.destroy();
+      }
+      else if(collectable.key == 'bluecup'){
+            _this.seconds += 10;
+            _this.timerText.setText(_this.seconds);
+            
+          
+      }
+      collectable.destroy();
 
-    	//console.log(collectable);
+      //console.log(collectable);
     });
     this.game.physics.arcade.overlap(this.player, this.doors, this.enterDoor, null, this);
 
@@ -156,40 +198,39 @@ TopDownGame.Dungeon.prototype = {
     this.player.body.velocity.x = 0;
     this.player.body.velocity.y = 0;
 
-
+var speed = 500;
     if(this.cursors.up.isDown) {
-    	this.player.body.velocity.y = -140;
-    	this.player.animations.play('up');
+      this.player.body.velocity.y = -speed;
+      this.player.animations.play('up');
     }
     if(this.cursors.down.isDown) {
-    	this.player.body.velocity.y = 140;
-    	this.player.animations.play('bottom');
+      this.player.body.velocity.y = speed;
+      this.player.animations.play('bottom');
     }
     if(this.cursors.left.isDown) {
-    	this.player.body.velocity.x = -140;
-    	this.player.animations.play('left');
+      this.player.body.velocity.x = -speed;
+      this.player.animations.play('left');
     }
     if(this.cursors.right.isDown) {
-    	this.player.body.velocity.x = 140;
-    	this.player.animations.play('right');
+      this.player.body.velocity.x = speed;
+      this.player.animations.play('right');
     }
   },
   collect: function(player, collectable) {
     //console.log('Got it!');
-	
+  
 
   },
   enterDoor: function(player, door) {
-   // console.log('entering door that will take you to '+door.targetTilemap+' on x:'+door.targetX+' and y:'+door.targetY);
-	  this.state.start('winner');
+    this.state.start('Win');
   },
 };
 
 TopDownGame.Dungeon.prototype.die = function(){
-	this.state.start('DungeonOver');
+  this.state.start('DungeonOver');
 }
 
 TopDownGame.Dungeon.prototype.gameOver = function(){
-	this.state.start('gameOver');
+  this.state.start('GameOver');
 }
     

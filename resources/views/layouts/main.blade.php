@@ -28,9 +28,9 @@
                                 <nav class="dropdown">
                                 
                                     <ul>
-                                        <li>
-                                            <a href="#">{{ HTML::image('img/signin.png', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.png', Auth::user()->firstname) }}</a>
-                                            <ul>
+                                        <li id="login">
+                                            <a href="#" id="login-trigger">{{ HTML::image('img/signin.png', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.png', Auth::user()->firstname) }}</a>
+                                            <ul id="login-content" style="display:none;">
                                                 @if(Auth::user()->admin == 1)
                                                     <li>{{ HTML::link('admin/categories', 'Manage Categories') }}</li>
                                                     <li>{{ HTML::link('admin/products', 'Manage Products') }}</li>
@@ -43,12 +43,12 @@
                                     
                                 </nav>
                             @else
-                                <nav id="signin" class="dropdown">
+                                <nav>
                                     <ul>
-                                        <li>
-                                            <a href="#">{{ HTML::image('img/user-icon.gif', 'Sign In') }} Sign In {{ HTML::image('img/down-arrow.gif', 'Sign In') }}
+                                        <li id="signin">
+                                            <a href="#"  id="signin-trigger"><img src="img/signin.png">Sign In<img src="img/down-arrow.png">
                                             </a>
-                                            <ul>
+                                            <ul id="signin-content"style="display:none;">
                                                 <li>{{ HTML::link('login', 'Sign In') }}</li>
                                                 <li>{{ HTML::link('signup', 'Sign Up') }}</li>
                                             </ul>
@@ -150,6 +150,26 @@
             (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
             g.src='//www.google-analytics.com/ga.js';
             s.parentNode.insertBefore(g,s)}(document,'script'));
+
+            $(document).ready(function(){
+    $('#login-trigger').click(function() {
+        $(this).next('#login-content').slideToggle();
+        $(this).toggleClass('active');                    
+        
+        if ($(this).hasClass('active')) $(this).find('a').html('&#x25B2;')
+            else $(this).find('a').html('&#x25BC;')
+        })
+});
+
+            $(document).ready(function(){
+    $('#signin-trigger').click(function() {
+        $(this).next('#signin-content').slideToggle();
+        $(this).toggleClass('active');                    
+        
+        if ($(this).hasClass('active')) $(this).find('a').html('&#x25B2;')
+            else $(this).find('a').html('&#x25BC;')
+        })
+});
         </script>
     </body>
 </html>
