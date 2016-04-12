@@ -320,6 +320,13 @@ header a:link, header a:visited {
 
 /* ---- product search-form ---- */
 
+.shop-category{
+    text-decoration: none;
+    color: black;
+    font-family: 'Limelight', cursive;
+    font-size: 14px;
+
+}
 #action-bar #search-form {
     float: left;
     padding-right: 25px;
@@ -338,6 +345,7 @@ header a:link, header a:visited {
 
 #action-bar #search-form .submit {
     background-color: #f6f6f6;
+    
 }
 
 /* ---- signin styles ---- */
@@ -1259,6 +1267,12 @@ section#promo .default-btn, .default-btn {
     top: 10px;
 }
 
+.cart-view{
+    text-decoration: none;
+    color: black;
+    font-family: 'Limelight', cursive;
+    font-size: 14px;
+}
 .cart-btn {
     padding: 10px 10px 10px 0;
     background-color: #5daad0;

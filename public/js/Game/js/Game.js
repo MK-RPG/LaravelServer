@@ -172,21 +172,20 @@ this.music.backgroundSound.play();
     this.player.body.velocity.x = 0;
     this.player.body.velocity.y = 0;
 
-var speed = 500;
     if(this.cursors.up.isDown) {
-      this.player.body.velocity.y = -speed;
+      this.player.body.velocity.y = -200;
       this.player.animations.play('up');
     }
     if(this.cursors.down.isDown) {
-      this.player.body.velocity.y = speed;
+      this.player.body.velocity.y = 200;
       this.player.animations.play('bottom');
     }
     if(this.cursors.left.isDown) {
-      this.player.body.velocity.x = -speed;
+      this.player.body.velocity.x = -200;
       this.player.animations.play('left');
     }
     if(this.cursors.right.isDown) {
-      this.player.body.velocity.x = speed;
+      this.player.body.velocity.x = 200;
       this.player.animations.play('right');
     }
   },

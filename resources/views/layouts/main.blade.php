@@ -35,8 +35,8 @@
                                             <a href="#" id="login-trigger">{{ HTML::image('img/signin.png', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.png', Auth::user()->firstname) }}</a>
                                             <ul id="login-content" style="display:none;">
                                                 @if(Auth::user()->admin == 1)
-                                                    <li>{{ HTML::link('admin/categories', 'Manage Categories') }}</li>
-                                                    <li>{{ HTML::link('admin/products', 'Manage Products') }}</li>
+                                                    <li>{{ HTML::link('admin/categories', 'Categories') }}</li>
+                                                    <li>{{ HTML::link('admin/products', 'Products') }}</li>
                                                 @endif
                                                 <li>{{ HTML::link('users/signout', 'Sign Out') }}</li>
 

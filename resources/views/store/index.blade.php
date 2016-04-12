@@ -16,7 +16,7 @@
    <nav class="dropdown">
         <ul>
             <li style="margin-left: 620px;">
-                <a href="#">Shop by Category {{ HTML::image('img/down-arrow.gif', 'Shop by Category') }}</a>
+                <a href="#" class="shop-category">Shop by Category {{ HTML::image('img/down-arrow.gif', 'Shop by Category') }}</a>
                 <ul>
                     {{--@foreach($catnav as $cat)--}}
                     {{--<li>{{ HTML::link('/store/category/'.$cat->id, $cat->name) }}</li>--}}
@@ -34,7 +34,7 @@
     </div><!-- end search-form -->
 
     <div id="view-cart" style="margin-left: 620px;">
-        <a href="store/cart"><img src="img/blue-cart.png">View Cart</a>
+        <a href="store/cart" class="cart-view"><img src="img/blue-cart.png">View Cart</a>
     </div><!-- end view-cart -->
 
 	<h2>All Products</h2>
