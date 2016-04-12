@@ -1,4 +1,8 @@
 @extends('layouts.main')
+
+<div>
+    <h1>your gold ballance is {{$gold}}</h1>
+</div>
 @section('promo')
     <div id="game">
 

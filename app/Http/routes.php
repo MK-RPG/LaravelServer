@@ -47,6 +47,7 @@ Route::group(['middleware' => ['web','admin']], function ()
 });
 
 Route::get('/game', 'GameController@index');
+Route::get('/ranking', 'RankingController@index');
 Route::get('/getscore', 'GameController@getScore');
 Route::post('/postscore', 'GameController@postScore');
 

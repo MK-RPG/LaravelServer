@@ -9,6 +9,7 @@
 
         {{ HTML::style('css/normalize.css') }}
         {{ HTML::style('css/main.css') }}
+        @yield('bootstrap')
         {{ HTML::script('js/vendor/modernizr-2.6.2.min.js') }}
     </head>
     <body>
@@ -57,7 +58,7 @@
                                     </ul>
                                 </nav>
                             @endif
-                                <li class="li"><a href="#"><img src="img/top.png">Top Players</a></li>
+                                <li class="li"><a href="/ranking"><img src="img/top.png">Top Players</a></li>
                                 <li><a href="#"><img src="img/shop.png">{{ HTML::link('store', 'Shop') }}</a></li>
                                 <li class="li"><a href="#"><img src="img/profile.png">Profile</a></li>
                         </div><!-- end user-menu -->

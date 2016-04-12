@@ -9,6 +9,7 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Auth;
+
 class GameController extends Controller
 {
     /**
@@ -20,14 +21,11 @@ class GameController extends Controller
     {
         $this->middleware('auth');
     }
-    /**
-     * Show the application dashboard.
-     *
-     * @return \Illuminate\Http\Response
-     */
+
     public function index()
     {
-        return view('game');
+        $gold = Auth::user()->gold;
+        return view('game' , compact('gold'));
     }
     public function getGold()
     {
