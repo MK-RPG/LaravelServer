@@ -147,6 +147,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Laravel\Socialite\SocialiteServiceProvider::class,
+
 
         /*
          * Application Service Providers...
@@ -210,8 +212,8 @@ return [
         'HTML' => Collective\Html\HtmlFacade::class,
         'Image' => Intervention\Image\Facades\Image::class,
         'Cart' => Moltin\Cart\Facade::class,
-        'Paypalpayment'   => Anouar\Paypalpayment\Facades\PaypalPayment::class
-
+        'Paypalpayment'   => Anouar\Paypalpayment\Facades\PaypalPayment::class,
+        'Socialite' => Laravel\Socialite\Facades\Socialite::class
     ],
 
 ];

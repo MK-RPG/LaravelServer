@@ -19,18 +19,16 @@
         <div id="wrapper">
         <header>
             <section>
-            <a href="/"><div id="top-area">
-            </div> </a>
+            <a href="/"><div id="top-area"></div> </a>
             </section> <!--end top-area -->
             @yield('top-navigation')
-
             <div class="container_24">
                 <div class="grid_24">
                     <nav class="navigate">
                         <div id="user-menu">
                             @if(Auth::check())
+                                {{--<img src="{{ Auth::user()->avatar }}" alt="" height="100" width="100" />--}}
                                 <nav class="dropdown">
-                                
                                     <ul>
                                         <li id="login">
                                             <a href="#" id="login-trigger">{{ HTML::image('img/signin.png', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.png', Auth::user()->firstname) }}</a>
@@ -72,36 +70,25 @@
             </div>
             <div class="clear"></div>
         </header>
-
-
             @yield('promo')
-
             @yield('search-keyword')
-
             <section id="main-content" class="clearfix">
                 @if (Session::has('message'))
                     <p class="alert">{{ Session::get('message') }}</p>
                 @endif
-
                 @yield('content')
             </section><!-- end main-content -->
-
             <hr/>
-
             @yield('pagination')
-
             <footer>
                 <section id="contact">
                    <div id="connect">
                         <h4>CONNECT WITH US</h4>
                         <ul>
-                            <a href="#"><li class="fb"></li></a>
+                            <a href="auth/facebook"><li class="fb"></li></a>
                         </ul>
                     </div><!-- end connect -->
                 </section><!-- end contact -->
-
-                
-
                 <section id="links">
                     <div id="my-account">
                         <h4>MY ACCOUNT</h4>

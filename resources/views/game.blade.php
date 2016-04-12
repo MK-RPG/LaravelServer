@@ -4,7 +4,6 @@
 </div>
 @section('promo')
     <div id="game">
-
     </div>
     {{ HTML::script('js/Game/js/phaser.js') }}
     {{ HTML::script('js/Game/js/DataManager.js') }}

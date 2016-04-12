@@ -24,13 +24,7 @@
     </div><!-- end product-details -->
     <div id="product-info">
         <p class="price">${{ $product->price }}</p>
-        <p>
-        	Availability: 
-        	<span class="{{ Availability::displayClass($product->availability) }}">
-        		{{ Availability::display($product->availability) }}
-        	</span>
-        </p>
+
         <p>Product Code: <span>{{ $product->id }}</span></p>
     </div><!-- end product-info -->
-
 @stop
