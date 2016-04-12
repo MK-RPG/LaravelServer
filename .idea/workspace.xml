@@ -2,98 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89f174de-6b84-423a-9f0c-54f132559ce0" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/audio/coin.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/audio/dungeon.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/audio/time.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/audio/village.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/audio/win.wav" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/Maze-Wallpapers.JPG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/Originals/over.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/back1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/bluecup.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/enemy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/gameover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/gameover.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/maze.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/maze2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/over.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/over.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/over1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/over2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/photothumb.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/sword.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/vff.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Thumbs.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/arrow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/back1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/bluecup.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/body_bg.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/browndoor.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/buttons.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/enemy.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/gameover.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/greencup.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/knight.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/maze.PNG" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/maze2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/menu.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/node_background.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/node_bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/node_top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/over.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/over.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/over1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/over2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/page_background.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/part1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/part2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/part3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/part4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/photothumb.db" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/player.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/preloader-bar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/shop.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/shop.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sidebar_block_background.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sidebar_block_bottom.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sidebar_block_top.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sign.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/soldiersearch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sword.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sword2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/tiles2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/tiles21.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/tilesDun.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/tileset.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/treasure.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/vff.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/video_bg.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/wall.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/watch.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/win.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/tilemaps/dungeonLast.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/tilemaps/dungeonLast.tmx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/tilemaps/maze.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/tilemaps/maze.tmx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/Boot.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/Dungeon.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/Game.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/GameOver.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/Preload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/StartMenu.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/Win.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/main.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/phaser.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/phaser.min.js" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/GameSaveController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/GameController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/Game/js/DataManager.js" afterPath="$PROJECT_DIR$/public/js/Game/js/DataManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/cart.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/cart.blade.php" />
     </list>
     <ignored path="Test1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -372,6 +281,62 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="audio" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="database" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
@@ -471,16 +436,16 @@
       <workItem from="1460337094220" duration="2011000" />
       <workItem from="1460356479546" duration="5937000" />
       <workItem from="1460367978638" duration="15509000" />
-      <workItem from="1460435094167" duration="2130000" />
+      <workItem from="1460435094167" duration="2518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25900000" />
+    <option name="totallyTimeSpent" value="26288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="0" width="1320" height="784" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2392638" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -489,7 +454,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2047546" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.7119114" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />

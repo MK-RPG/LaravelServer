@@ -3,16 +3,16 @@
 @section('content')
 
 	<div id="shopping-cart">
-    <h1>Shopping Cart & Checkout</h1>
+    <h1>Shopping Cart</h1>
 
     <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
         <table border="1">
             <tr>
                 <th>#</th>
                 <th>Product Name</th>
-                <th>Unit Price</th>
+                <th>Price</th>
                 <th>Quantity</th>
-                <th>Subtotal</th>
+                <th>Total</th>
             </tr>
 
             @foreach($products as $product)
@@ -29,7 +29,7 @@
                 <td>
                     ${{ $product->price }} 
                     <a href="/store/removeitem/{{ $product->identifier }}">
-                        {{ HTML::image('img/remove.gif', 'Remove product') }}
+                        {{ HTML::image('img/remove.png', 'Remove product') }}
                     </a>
                 </td>
             </tr>
@@ -48,8 +48,13 @@
                     <input type="hidden" name="last_name" value="{{ Auth::user()->lastname }}">
                     <input type="hidden" name="email" value="{{ Auth::user()->email }}">
 
+<<<<<<< HEAD
                     {{ HTML::link('/store', 'Continue Shopping', array('class'=>'tertiary-btn')) }}
                     <input type="submit" value="CHECKOUT WITH PAYPAL" class="secondary-cart-btn">
+=======
+                    {{ HTML::link('/', 'Continue Shopping', array('class'=>'secondary-cart-btn')) }}
+                    <input type="submit" value="Pay With PAYPAL" class="secondary-cart-btn">
+>>>>>>> 53b01bed437d19df30ea6b0e6d677b73842c619a
                 </td>
             </tr>
         </table>

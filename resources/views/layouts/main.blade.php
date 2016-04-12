@@ -14,7 +14,9 @@
     <body>
         <div id="wrapper">
         <header>
-            <section id="top-area">
+            <section>
+            <a href="/"><div id="top-area">
+            </div> </a>
             </section> <!--end top-area -->
             @yield('top-navigation')
 
@@ -24,6 +26,7 @@
                         <div id="user-menu">
                             @if(Auth::check())
                                 <nav class="dropdown">
+                                
                                     <ul>
                                         <li>
                                             <a href="#">{{ HTML::image('img/signin.png', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.png', Auth::user()->firstname) }}</a>
@@ -37,6 +40,7 @@
                                             </ul>
                                         </li>
                                     </ul>
+                                    
                                 </nav>
                             @else
                                 <nav id="signin" class="dropdown">
@@ -54,7 +58,7 @@
                                 </nav>
                             @endif
                                 <li class="li"><a href="#"><img src="img/top.png">Top Players</a></li>
-                                <li><img src="img/shop.png">{{ HTML::link('store', 'Shop') }}</li>
+                                <li><a href="#"><img src="img/shop.png">{{ HTML::link('store', 'Shop') }}</a></li>
                                 <li class="li"><a href="#"><img src="img/profile.png">Profile</a></li>
                         </div><!-- end user-menu -->
 
