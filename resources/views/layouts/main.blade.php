@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>eCommerce</title>
+        <title>MazeRunner</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <meta name="csrf-token" content="{{ csrf_token() }}" />
@@ -23,11 +23,12 @@
             </div> </a>
             </section> <!--end top-area -->
             @yield('top-navigation')
-            @section('gold')
+            
+            @if(Auth::check())
                 <div>
                 <h1 id="gold">You have {{Auth::user()->gold}} coins.</h1>
                 </div>
-            @stop
+            @endif
             <div class="container_24">
                 <div class="grid_24">
                     <nav class="navigate">
