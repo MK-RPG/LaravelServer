@@ -12,32 +12,6 @@
 */
 
 
-
-/*Route::group(['middleware' => 'web'], function () {
-
-    Route::get('/', [
-        'uses' => 'HomeController@getIndex',
-        'as' => 'index'
-    ]);
-
-
-    Route::get('/login', [
-        'uses' => '\App\Http\Controllers\AuthController@getLogin',
-        'as' => 'auth.login',
-        'middleware' => ['guest']
-    ]);
-
-    Route::post('/login', [
-        'uses' => '\App\Http\Controllers\AuthController@postLogin',
-        'as' => 'auth.login',
-        'middleware' => ['guest']
-    ]);
-
-    Route::get('/logout', [
-        'uses' => '\App\Http\Controllers\AuthController@logout',
-        'as' => 'main_layout',
-    ]);
-});*/
 Route::get('/', 'HomeController@getIndex');
 
 
@@ -49,7 +23,7 @@ Route::get('/', 'HomeController@getIndex');
     Route::get('users/newaccount', 'UsersController@getNewaccount');
     Route::post('users/create', 'UsersController@postCreate');
 
-/*    Route::get('store', 'StoreController@getIndex');*/
+//Route::resource('payment', 'PaymentController');
 
 
 
@@ -72,9 +46,9 @@ Route::group(['middleware' => ['web','admin']], function ()
     Route::post('admin/products/destroy', 'ProductsController@postDestroy');
 });
 
-Route::get('/game', 'GameSaveController@index');
-Route::get('/getscore', 'GameSaveController@getScore');
-Route::post('/postscore', 'GameSaveController@postScore');
+Route::get('/game', 'GameController@index');
+Route::get('/getscore', 'GameController@getScore');
+Route::post('/postscore', 'GameController@postScore');
 
 
 

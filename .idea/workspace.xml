@@ -2,11 +2,98 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89f174de-6b84-423a-9f0c-54f132559ce0" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/audio/coin.mp3" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/audio/dungeon.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/audio/time.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/audio/village.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/audio/win.wav" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/Maze-Wallpapers.JPG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/Originals/over.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/back1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/bluecup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/enemy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/gameover.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/gameover.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/maze.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/maze2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/over.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/over.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/over1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/over2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/photothumb.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Originals/vff.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/arrow.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/back1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/bluecup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/body_bg.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/browndoor.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/buttons.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/enemy.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/gameover.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/greencup.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/knight.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/maze.PNG" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/maze2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/menu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/node_background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/node_bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/node_top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/over.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/over.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/over1.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/over2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/page_background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/part1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/part2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/part3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/part4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/photothumb.db" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/player.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/preloader-bar.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/shop.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/shop.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sidebar_block_background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sidebar_block_bottom.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sidebar_block_top.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sign.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/soldiersearch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sword.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/sword2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/tiles2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/tiles21.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/tilesDun.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/tileset.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/treasure.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/vff.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/video_bg.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/wall.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/watch.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/images/win.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/tilemaps/dungeonLast.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/tilemaps/dungeonLast.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/tilemaps/maze.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/assets/tilemaps/maze.tmx" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/Boot.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/Dungeon.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/Game.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/GameOver.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/Preload.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/StartMenu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/Win.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/main.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/phaser.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/Game/js/phaser.min.js" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/app/Http/Controllers/GameSaveController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/GameController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" afterPath="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/Http/routes.php" afterPath="$PROJECT_DIR$/app/Http/routes.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/Game/js/DataManager.js" afterPath="$PROJECT_DIR$/public/js/Game/js/DataManager.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/Game/js/Game.js" afterPath="$PROJECT_DIR$/public/js/Game/js/Game.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/game.blade.php" afterPath="$PROJECT_DIR$/resources/views/game.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/cart.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/cart.blade.php" />
     </list>
     <ignored path="Test1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -28,38 +115,37 @@
     <option name="SORT_POSITIONED" value="false" />
     <option name="SHOW_TABLE_DETAILS" value="true" />
     <option name="SHOW_EMPTY_GROUPS" value="false" />
-    <PATH>
-      <PATH_ELEMENT>
-        <option name="myItemId" />
-        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
-      </PATH_ELEMENT>
-    </PATH>
   </component>
   <component name="FavoritesManager">
     <favorites_list name="Test1" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DataManager.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/Game/js/DataManager.js">
+      <file leaf-file-name="2014_10_12_000000_create_users_table.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
+            <state relative-caret-position="504">
+              <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="FinalProject.users" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/2c068600/7f5457e2-5323-48d4-92db-b3628c67c96d/FinalProject.users">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
+      <file leaf-file-name="app.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/app.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="173" column="5" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </entry>
+      </file>
+      <file leaf-file-name="DataManager.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/public/js/Game/js/DataManager.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="550">
+              <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
               <folding />
             </state>
           </provider>
@@ -75,43 +161,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Game.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/Game/js/Game.js">
+      <file leaf-file-name="GameController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GameController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="96">
-              <caret line="4" column="23" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameOver.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/js/Game/js/GameOver.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GameSaveController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GameSaveController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1032">
-              <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-              <folding>
-                <element signature="e#74#96#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="console.sql" pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/7f5457e2-5323-48d4-92db-b3628c67c96d/console.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="552">
+              <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -120,31 +174,9 @@
       <file leaf-file-name="routes.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="616">
-              <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
+            <state relative-caret-position="256">
+              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UsersController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/UsersController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1464">
-              <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
-              <folding>
-                <element signature="e#38#75#0#PHP" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -157,12 +189,19 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/Http/Controllers/GameController.php" />
-        <option value="$PROJECT_DIR$/app/Http/routes.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/GameSaveController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/UsersController.php" />
         <option value="$PROJECT_DIR$/resources/views/game.blade.php" />
         <option value="$PROJECT_DIR$/public/js/Game/js/Game.js" />
+        <option value="$PROJECT_DIR$/resources/views/store/cart.blade.php" />
+        <option value="$PROJECT_DIR$/public/js/Game/js/Preload.js" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Payment.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/PaymentController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/HomeController.php" />
+        <option value="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" />
+        <option value="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/GameSaveController.php" />
+        <option value="$PROJECT_DIR$/app/Http/routes.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/GameController.php" />
         <option value="$PROJECT_DIR$/public/js/Game/js/DataManager.js" />
       </list>
     </option>
@@ -183,7 +222,6 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" interpreter_name="PHP" />
   <component name="ProjectFrameBounds">
     <option name="x" value="54" />
-    <option name="y" value="-8" />
     <option name="width" value="1320" />
     <option name="height" value="784" />
   </component>
@@ -212,8 +250,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -232,8 +268,150 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Game" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="database" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="seeds" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Test1" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -292,35 +470,36 @@
       <workItem from="1460336767297" duration="313000" />
       <workItem from="1460337094220" duration="2011000" />
       <workItem from="1460356479546" duration="5937000" />
-      <workItem from="1460367978638" duration="740000" />
+      <workItem from="1460367978638" duration="15509000" />
+      <workItem from="1460435094167" duration="2130000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9001000" />
+    <option name="totallyTimeSpent" value="25900000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="54" y="-8" width="1320" height="784" extended-state="7" />
-    <editor active="false" />
+    <frame x="54" y="0" width="1320" height="784" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14263804" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2392638" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2392638" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2047546" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32963988" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -341,6 +520,72 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4152">
+          <caret line="173" column="5" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/game.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GameController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="33" column="39" selection-start-line="33" selection-start-column="39" selection-end-line="33" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2784">
+          <caret line="118" column="39" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/paypal_payment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -377,17 +622,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GameSaveController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GameController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1032">
           <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <element signature="e#74#96#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -403,7 +645,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -419,9 +660,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1464">
           <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
-          <folding>
-            <element signature="e#38#75#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -443,19 +681,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Delete.php" />
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="18" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GameController.php" />
     <entry file="file://$PROJECT_DIR$/resources/views/users/signin.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -463,9 +693,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1464">
           <caret line="66" column="76" selection-start-line="66" selection-start-column="76" selection-end-line="66" selection-end-column="76" />
-          <folding>
-            <element signature="e#38#75#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -473,23 +700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/game.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/Game/js/Game.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="96">
-          <caret line="4" column="23" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -507,16 +717,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GameSaveController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1032">
-          <caret line="46" column="1" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
-          <folding>
-            <element signature="e#74#96#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -525,35 +725,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="76" column="58" selection-start-line="76" selection-start-column="58" selection-end-line="76" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.env">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="8" column="24" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/Game/js/DataManager.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="41" selection-end-line="23" selection-end-column="41" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -561,19 +736,135 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/img/remove.gif">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/store/cart.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="53" column="17" selection-start-line="53" selection-start-column="17" selection-end-line="53" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/game.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="5" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/Game/js/Boot.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/Game/js/Game.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="2" selection-start-line="11" selection-start-column="2" selection-end-line="11" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/Game/js/Preload.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="69" selection-start-line="14" selection-start-column="69" selection-end-line="14" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Payment.php" />
+    <entry file="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="22" column="33" selection-start-line="22" selection-start-column="33" selection-end-line="22" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="dbDummy://dbtable:/2c068600/7f5457e2-5323-48d4-92db-b3628c67c96d/FinalProject.users">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
         </state>
       </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/app.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="173" column="5" selection-start-line="173" selection-start-column="5" selection-end-line="173" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/PaymentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2832">
+          <caret line="118" column="39" selection-start-line="118" selection-start-column="39" selection-end-line="118" selection-end-column="39" />
+          <folding>
+            <element signature="e#40#68#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/paypal_payment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/GameController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/Game/js/DataManager.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="27" column="10" selection-start-line="27" selection-start-column="10" selection-end-line="27" selection-end-column="10" />
           <folding />
         </state>
       </provider>

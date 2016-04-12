@@ -19,6 +19,7 @@ class CreateUsersTable extends Migration
             $table->string('email');
             $table->string('password');
             $table->boolean('admin')->default(0);
+            $table->integer('gold')->unsigned()->default(100);
             $table->timestamps();
         });
     }

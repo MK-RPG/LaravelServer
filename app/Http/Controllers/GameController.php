@@ -29,19 +29,19 @@ class GameController extends Controller
     {
         return view('game');
     }
-    public function getScore()
+    public function getGold()
     {
-        $highscore = response()->json([
-            "highscore" => Auth::user()->highscore
+        $gold = response()->json([
+            "gold" => Auth::user()->gold
         ]);
-        return $highscore;
+        return $gold;
     }
 
-    public function postScore()
+    public function postGold()
     {
         $user = Auth::user();
-        $score = request()->input('score');
-        $user->highscore = $score;
+        $gold = request()->input('gold');
+        $user->gold = $gold;
         $user->save;
     }
 }

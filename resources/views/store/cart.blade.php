@@ -5,7 +5,7 @@
 	<div id="shopping-cart">
     <h1>Shopping Cart & Checkout</h1>
 
-    <form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+    <form action="https://www.sandbox.paypal.com/cgi-bin/webscr" method="post">
         <table border="1">
             <tr>
                 <th>#</th>
@@ -48,7 +48,7 @@
                     <input type="hidden" name="last_name" value="{{ Auth::user()->lastname }}">
                     <input type="hidden" name="email" value="{{ Auth::user()->email }}">
 
-                    {{ HTML::link('/', 'Continue Shopping', array('class'=>'tertiary-btn')) }}
+                    {{ HTML::link('/store', 'Continue Shopping', array('class'=>'tertiary-btn')) }}
                     <input type="submit" value="CHECKOUT WITH PAYPAL" class="secondary-cart-btn">
                 </td>
             </tr>

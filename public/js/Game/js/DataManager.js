@@ -8,7 +8,7 @@ var DataManager = function($){
     var collectedCoins = 0;
 
     return{
-        getHightScore:function (fn) {
+        getGold:function (fn) {
             $.get('getscore',function(data){
                 collectedCoins = data;
                 console.log(collectedCoins,'collectedCoins')
@@ -18,7 +18,7 @@ var DataManager = function($){
         getInternalData:function () {
             return collectedCoins;
         },
-        postHighscore: function (collectedCoins) {
+        postGold: function (collectedCoins) {
             console.log(collectedCoins)
             $.post('postscore',{collectedCoins:collectedCoins},function(){
                 console.log('Data sent');

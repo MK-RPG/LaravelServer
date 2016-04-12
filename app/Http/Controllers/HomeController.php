@@ -26,4 +26,9 @@ class HomeController extends Controller
     {
              return view('home');
     }
+
+    public function Webhook()
+    {
+    // TODO: Handle Webhook call
+    }
 }
