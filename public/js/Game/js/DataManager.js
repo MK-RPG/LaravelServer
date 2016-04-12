@@ -2,8 +2,8 @@ var DataManager = function(){
 
     $.ajaxSetup({
         headers: {
-            'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        }
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
     })
     var collectedCoins = 0;
 
@@ -24,9 +24,11 @@ var DataManager = function(){
                 console.log('Data sent');
             });
         },
-        uploadScore: function(coins) {
-            $.post('postscore',{collectedCoins:collectedCoins},function(){
-                console.log(arguments);
+        uploadScore: function(collectedCoins) {
+                console.log(collectedCoins);
+            $_token = "{{ csrf_token() }}";
+            $.post('/postscore',{gold:collectedCoins, _token: $_token},function(){
+                console.log('success');
             });
         }
     }
