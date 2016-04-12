@@ -22,15 +22,11 @@
             <a href="/"><div id="top-area"></div> </a>
             </section> <!--end top-area -->
             @yield('top-navigation')
-<<<<<<< HEAD
-=======
-            
             @if(Auth::check())
                 <div>
                 <span id="gold">You have {{Auth::user()->gold}} coins.</span>
                 </div>
             @endif
->>>>>>> 67f51b58b1046ecb12f35c1906aad071f6b5fc28
             <div class="container_24">
                 <div class="grid_24">
                     <nav class="navigate">
@@ -38,10 +34,6 @@
                             @if(Auth::check())
                                 {{--<img src="{{ Auth::user()->avatar }}" alt="" height="100" width="100" />--}}
                                 <nav class="dropdown">
-<<<<<<< HEAD
-=======
-                              
->>>>>>> 67f51b58b1046ecb12f35c1906aad071f6b5fc28
                                     <ul>
                                         <li id="login">
                                             <a href="#" id="login-trigger">{{ HTML::image('img/signin.png', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.png', Auth::user()->firstname) }}</a>
@@ -55,7 +47,6 @@
                                             </ul>
                                         </li>
                                     </ul>
-                                    
                                 </nav>
                             @else
                                 <nav>
@@ -75,7 +66,7 @@
                                 <li class="li"><a href="/ranking"><img src="/img/top.png">Top Players</a></li>
                                 <li><a href="#"><img src="/img/shop.png">{{ HTML::link('store', 'Shop') }}</a></li>
                                 @yield('play-button')
-                                
+
                         </div><!-- end user-menu -->
 
                         <div class="clear"></div>
@@ -135,7 +126,7 @@
                         <p id="store-desc" style="color: black">All Rights Reserved.</p>
                         <p id="store-copy">&copy; 2016 TheMazeRunnerGame.</p>
                     </div><!-- end copyright -->
-                
+
                     <div id="payments">
                         <h4>SUPPORTED PAYMENT METHODS</h4>
                         {{ HTML::image('img/payment-methods.gif', 'Supported Payment Methods') }}
@@ -158,8 +149,8 @@
             $(document).ready(function(){
     $('#login-trigger').click(function() {
         $(this).next('#login-content').slideToggle();
-        $(this).toggleClass('active');                    
-        
+        $(this).toggleClass('active');
+
         if ($(this).hasClass('active')) $(this).find('a').html('&#x25B2;')
             else $(this).find('a').html('&#x25BC;')
         })
@@ -168,8 +159,8 @@
             $(document).ready(function(){
     $('#signin-trigger').click(function() {
         $(this).next('#signin-content').slideToggle();
-        $(this).toggleClass('active');                    
-        
+        $(this).toggleClass('active');
+
         if ($(this).hasClass('active')) $(this).find('a').html('&#x25B2;')
             else $(this).find('a').html('&#x25BC;')
         })

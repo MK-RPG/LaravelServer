@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="89f174de-6b84-423a-9f0c-54f132559ce0" name="Default" comment="">
+<<<<<<< Updated upstream
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/images/bat.PNG" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/bat.PNG" />
       <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/img/products/1460489418.png" />
@@ -18,6 +19,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/ranking.blade.php" afterPath="$PROJECT_DIR$/resources/views/ranking.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/cart.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/cart.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/store/index.blade.php" afterPath="$PROJECT_DIR$/resources/views/store/index.blade.php" />
+=======
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+>>>>>>> Stashed changes
     </list>
     <ignored path="Test1.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -367,12 +371,16 @@
       <workItem from="1460337094220" duration="2011000" />
       <workItem from="1460356479546" duration="5937000" />
       <workItem from="1460367978638" duration="15509000" />
-      <workItem from="1460435094167" duration="36777000" />
+      <workItem from="1460435094167" duration="36951000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< Updated upstream
     <option name="totallyTimeSpent" value="60756000" />
+=======
+    <option name="totallyTimeSpent" value="60721000" />
+>>>>>>> Stashed changes
   </component>
   <component name="ToolWindowManager">
     <frame x="54" y="-8" width="1320" height="784" extended-state="6" />
