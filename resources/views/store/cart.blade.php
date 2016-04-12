@@ -1,5 +1,7 @@
 @extends('layouts.main')
-
+@section ('play-button')
+<li class="li"><a href="/game"><img src="/img/play.png">Play</a></li>
+@stop
 @section('content')
 
 	<div id="shopping-cart">

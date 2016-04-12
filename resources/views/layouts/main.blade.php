@@ -2,7 +2,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>eCommerce</title>
+        <title>MazeRunner</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <meta name="csrf-token" content="{{ csrf_token() }}" />
@@ -22,6 +22,15 @@
             <a href="/"><div id="top-area"></div> </a>
             </section> <!--end top-area -->
             @yield('top-navigation')
+<<<<<<< HEAD
+=======
+            
+            @if(Auth::check())
+                <div>
+                <span id="gold">You have {{Auth::user()->gold}} coins.</span>
+                </div>
+            @endif
+>>>>>>> 67f51b58b1046ecb12f35c1906aad071f6b5fc28
             <div class="container_24">
                 <div class="grid_24">
                     <nav class="navigate">
@@ -29,6 +38,10 @@
                             @if(Auth::check())
                                 {{--<img src="{{ Auth::user()->avatar }}" alt="" height="100" width="100" />--}}
                                 <nav class="dropdown">
+<<<<<<< HEAD
+=======
+                              
+>>>>>>> 67f51b58b1046ecb12f35c1906aad071f6b5fc28
                                     <ul>
                                         <li id="login">
                                             <a href="#" id="login-trigger">{{ HTML::image('img/signin.png', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.png', Auth::user()->firstname) }}</a>
@@ -61,7 +74,8 @@
                             @endif
                                 <li class="li"><a href="/ranking"><img src="/img/top.png">Top Players</a></li>
                                 <li><a href="#"><img src="/img/shop.png">{{ HTML::link('store', 'Shop') }}</a></li>
-                                <li class="li"><a href="/game"><img src="/img/play.png">Play</a></li>
+                                @yield('play-button')
+                                
                         </div><!-- end user-menu -->
 
                         <div class="clear"></div>

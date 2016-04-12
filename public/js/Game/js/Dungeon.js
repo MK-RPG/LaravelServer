@@ -1,8 +1,7 @@
-var TopDownGame = TopDownGame || {};
+  var TopDownGame = TopDownGame || {};
 
 
 TopDownGame.Dungeon = function(){
-  this.collectedCoins = 0;
   
   this.timerText;
     this.timerImage;
@@ -36,9 +35,7 @@ this.music.backgroundSound.play();
     //collision on blockedLayer
     this.map.setCollisionBetween(1, 2000, true, 'blockedLayer');
     
-    
-    
-    
+      
     this.createItems();
     this.createDoors();
     this.createEnemy();
@@ -76,17 +73,17 @@ this.music.backgroundSound.play();
 
     this.text = this.game.add.text(20, 20, "Coins: ", { font: "30px Arial", fill: "#fff", align: "center" });
   this.text.fixedToCamera = true;
-  var timerIndex = null;
+  
     function timer() {
      
-    timerIndex = setTimeout(function() {
+    _this.game.timerIndex = setTimeout(function() {
         _this.seconds -= 1;
        _this.timerText.setText(_this.seconds);
        timer();
        
        if(_this.seconds <= 0) {
                 _this.gameOver();
-                clearInterval(timerIndex);
+                clearInterval(_this.game.timerIndex);
                 _this.seconds = 60;
                 }
       },1000);
@@ -174,6 +171,7 @@ this.music.backgroundSound.play();
    
     //collision
     this.game.physics.arcade.collide(this.player, this.blockedLayer);
+
     this.game.physics.arcade.overlap(this.player, this.mummy, function(player,mummy){
       player.kill();
       _this.gameOver();
@@ -182,8 +180,8 @@ this.music.backgroundSound.play();
       
       if(collectable.key == 'greencup') {
           _this.music.collectCoin.play();
-        _this.collectedCoins++;
-          _this.text.text = 'Coins: ' + _this.collectedCoins;
+        _this.game.allCoins++;
+          _this.text.text = 'Coins: ' + _this.game.allCoins;
 
       }
       else if(collectable.key == 'bluecup'){
@@ -205,19 +203,19 @@ this.music.backgroundSound.play();
     this.player.body.velocity.y = 0;
 
    if(this.cursors.up.isDown) {
-      this.player.body.velocity.y = -200;
+      this.player.body.velocity.y = -300;
       this.player.animations.play('up');
     }
     if(this.cursors.down.isDown) {
-      this.player.body.velocity.y = 200;
+      this.player.body.velocity.y = 300;
       this.player.animations.play('bottom');
     }
     if(this.cursors.left.isDown) {
-      this.player.body.velocity.x = -200 ;
+      this.player.body.velocity.x = -300 ;
       this.player.animations.play('left');
     }
     if(this.cursors.right.isDown) {
-      this.player.body.velocity.x = 200;
+      this.player.body.velocity.x = 300;
       this.player.animations.play('right');
     }
   },
@@ -228,6 +226,7 @@ this.music.backgroundSound.play();
   },
   enterDoor: function(player, door) {
     this.state.start('Win');
+    DataManager.uploadScore(this.game.allCoins+10);
   },
 };
 
@@ -237,8 +236,9 @@ TopDownGame.Dungeon.prototype.die = function(){
 
 TopDownGame.Dungeon.prototype.gameOver = function(){
   this.music.backgroundSound.stop();
-  DataManager.uploadScore(this.collectedCoins);
-
+  clearInterval(this.game.timerIndex);
+  console.log(this.timerIndex);
+  DataManager.uploadScore(this.game.allCoins);
   this.state.start('GameOver');
 
 }

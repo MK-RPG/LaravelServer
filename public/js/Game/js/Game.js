@@ -2,14 +2,13 @@ var TopDownGame = TopDownGame || {};
 
 
 TopDownGame.Game = function(){
-  this.collectedCoins = 0;
+  //this.collectedCoins = 0;
   
   this.timerText;
   this.timerImage;
    
   this.music;
-  this.collectItems = {};
-  this.collectItems.coins = 0;
+
     
 };
 
@@ -24,7 +23,7 @@ this.music.collectTime = this.game.add.audio('time');
 this.music.backgroundSound.play();
     
     this.seconds = 60;    
-  var _this = this;
+    var _this = this;
     
     this.map = this.game.add.tilemap('maze');
 
@@ -39,7 +38,9 @@ this.music.backgroundSound.play();
     //collision on blockedLayer
     this.map.setCollisionBetween(1, 2000, true, 'blockedLayer');
     
-    
+    this.game.allCoins = 0;
+    this.game.timerIndex = 0;
+
     this.createItems();
     this.createDoors();  
    
@@ -67,19 +68,19 @@ this.music.backgroundSound.play();
 
     this.cursors = this.game.input.keyboard.createCursorKeys();
 
-    this.text = this.game.add.text(20, 20, "Coins: ", { font: "30px Arial", fill: "#fff", align: "center" });
+    this.text = this.game.add.text(20, 20, "Coins: ", { font: "20px Arial", fill: "#fff", align: "center" });
   this.text.fixedToCamera = true;
   var timerIndex = null;
     function timer() {
      
-    timerIndex = setTimeout(function() {
+    _this.game.timerIndex = setTimeout(function() {
         _this.seconds -= 1;
        _this.timerText.setText(_this.seconds);
        timer();
        
        if(_this.seconds == 0) {
                 _this.gameOver();
-                clearInterval(timerIndex);
+                clearInterval(_this.game.timerIndex);
                 _this.seconds = 60;
                 }
       },1000);
@@ -150,9 +151,9 @@ this.music.backgroundSound.play();
       
       if(collectable.key == 'greencup') {
         _this.music.collectCoin.play();
-        _this.collectedCoins++;
-          _this.text.text = 'Coins: ' + _this.collectedCoins;
-          _this.collectItems.coins = _this.collectedCoins;
+        _this.game.allCoins++;
+
+          _this.text.text = 'Coins: ' + _this.game.allCoins;
 
       }
       else if(collectable.key == 'bluecup'){
@@ -203,5 +204,6 @@ this.music.backgroundSound.play();
 };
 
 TopDownGame.Game.prototype.gameOver = function(){
+  clearInterval(this.game.timerIndex);
   this.state.start('GameOver');
 }
