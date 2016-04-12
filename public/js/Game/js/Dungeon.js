@@ -1,4 +1,4 @@
-var TopDownGame = TopDownGame || {};
+  var TopDownGame = TopDownGame || {};
 
 
 TopDownGame.Dungeon = function(){
@@ -205,19 +205,19 @@ this.music.backgroundSound.play();
     this.player.body.velocity.y = 0;
 
    if(this.cursors.up.isDown) {
-      this.player.body.velocity.y = -200;
+      this.player.body.velocity.y = -500;
       this.player.animations.play('up');
     }
     if(this.cursors.down.isDown) {
-      this.player.body.velocity.y = 200;
+      this.player.body.velocity.y = 500;
       this.player.animations.play('bottom');
     }
     if(this.cursors.left.isDown) {
-      this.player.body.velocity.x = -200 ;
+      this.player.body.velocity.x = -500 ;
       this.player.animations.play('left');
     }
     if(this.cursors.right.isDown) {
-      this.player.body.velocity.x = 200;
+      this.player.body.velocity.x = 500;
       this.player.animations.play('right');
     }
   },
@@ -238,7 +238,6 @@ TopDownGame.Dungeon.prototype.die = function(){
 TopDownGame.Dungeon.prototype.gameOver = function(){
   this.music.backgroundSound.stop();
   DataManager.uploadScore(this.collectedCoins);
-
   this.state.start('GameOver');
 
 }

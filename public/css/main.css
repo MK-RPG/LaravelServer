@@ -114,6 +114,10 @@ textarea {
     background-repeat: repeat;
 }
 
+#gold{
+     font-family: 'Limelight', cursive;
+    font-size: 20px;
+}
 
 header {
     position:relative;

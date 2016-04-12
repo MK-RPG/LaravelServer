@@ -24,7 +24,7 @@ this.music.collectTime = this.game.add.audio('time');
 this.music.backgroundSound.play();
     
     this.seconds = 60;    
-  var _this = this;
+    var _this = this;
     
     this.map = this.game.add.tilemap('maze');
 

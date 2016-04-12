@@ -23,7 +23,11 @@
             </div> </a>
             </section> <!--end top-area -->
             @yield('top-navigation')
-
+            @section('gold')
+                <div>
+                <h1 id="gold">You have {{Auth::user()->gold}} coins.</h1>
+                </div>
+            @stop
             <div class="container_24">
                 <div class="grid_24">
                     <nav class="navigate">
@@ -63,7 +67,8 @@
                             @endif
                                 <li class="li"><a href="/ranking"><img src="/img/top.png">Top Players</a></li>
                                 <li><a href="#"><img src="/img/shop.png">{{ HTML::link('store', 'Shop') }}</a></li>
-                                <li class="li"><a href="/game"><img src="/img/play.png">Play</a></li>
+                                @yield('play-button')
+                                
                         </div><!-- end user-menu -->
 
                         <div class="clear"></div>

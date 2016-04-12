@@ -1,9 +1,7 @@
 @extends('layouts.main')
-<div>
-    <h1>your gold ballance is {{$gold}}</h1>
-</div>
+@yield('gold')
 @section('promo')
-    <div id="game">
+    <div id="game" style="width:640px;margin: 0 auto;">
 
     </div>
     {{ HTML::script('js/Game/js/phaser.js') }}
@@ -14,5 +12,6 @@
     {{ HTML::script('js/Game/js/Dungeon.js') }}
     {{ HTML::script('js/Game/js/StartMenu.js') }}
     {{ HTML::script('js/Game/js/GameOver.js') }}
+    {{ HTML::script('js/Game/js/Win.js') }}
     {{ HTML::script('js/Game/js/main.js') }}
 @stop
