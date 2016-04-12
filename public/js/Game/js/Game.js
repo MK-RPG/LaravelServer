@@ -2,23 +2,28 @@ var TopDownGame = TopDownGame || {};
 
 
 TopDownGame.Game = function(){
-	this.collectedCoins = 0;
-	/*
-	 * this.timerData = {
-			timeToEnd : 30
-	}
-	 */
-	
-	this.timerText;
-    this.timerImage;
-    //this.seconds = 60;
+  this.collectedCoins = 0;
+  
+  this.timerText;
+  this.timerImage;
+   
+  this.music;
+    
 };
 
 TopDownGame.Game.prototype = {
   create: function() {
-    this.seconds = 60;	  
-	var _this = this;
-	  
+
+this.music = {};
+this.music.backgroundSound = this.game.add.audio('village');
+this.music.collectCoin = this.game.add.audio('collect');
+this.music.collectTime = this.game.add.audio('time');
+
+this.music.backgroundSound.play();
+    
+    this.seconds = 60;    
+  var _this = this;
+    
     this.map = this.game.add.tilemap('maze');
 
     this.map.addTilesetImage('tiles', 'gameTiles');
@@ -34,7 +39,8 @@ TopDownGame.Game.prototype = {
     
     
     this.createItems();
-    this.createDoors();    
+    this.createDoors();  
+   
 
     //create player
     var result = this.findObjectsByType('playerStart', this.map, 'objectsLayer')
@@ -53,28 +59,29 @@ TopDownGame.Game.prototype = {
     this.player.body.drag = 300;
     
 
+
     //camera follows the player
     this.game.camera.follow(this.player);
 
     this.cursors = this.game.input.keyboard.createCursorKeys();
 
     this.text = this.game.add.text(20, 20, "Coins: ", { font: "30px Arial", fill: "#fff", align: "center" });
-	this.text.fixedToCamera = true;
-	var timerIndex = null;
+  this.text.fixedToCamera = true;
+  var timerIndex = null;
     function timer() {
-  	 
-  	timerIndex = setTimeout(function() {
-  		  _this.seconds -= 1;
-  		 _this.timerText.setText(_this.seconds);
-  		 timer();
-  		 
-  		 if(_this.seconds == 0) {
-  	            _this.gameOver();
-  	            clearInterval(timerIndex);
-  	            _this.seconds = 60;
-  	            }
-  	  },1000);
-  	 
+     
+    timerIndex = setTimeout(function() {
+        _this.seconds -= 1;
+       _this.timerText.setText(_this.seconds);
+       timer();
+       
+       if(_this.seconds == 0) {
+                _this.gameOver();
+                clearInterval(timerIndex);
+                _this.seconds = 60;
+                }
+      },1000);
+     
     }
     
     timer();
@@ -99,12 +106,11 @@ TopDownGame.Game.prototype = {
       this.createFromTiledObject(element, this.doors);
     }, this);
   },
-
+  
   findObjectsByType: function(type, map, layer) {
     var result = new Array();
     map.objects[layer].forEach(function(element){
       if(element.properties.type === type) {
-
         element.y -= map.tileHeight;
         result.push(element);
       }      
@@ -134,26 +140,28 @@ TopDownGame.Game.prototype = {
 
   },
   update: function() {
-	 var _this = this;
-	 
+   var _this = this;
+   
     //collision
     this.game.physics.arcade.collide(this.player, this.blockedLayer);
     this.game.physics.arcade.overlap(this.player, this.items, function(player,collectable){
-    	
-    	if(collectable.key == 'greencup') {
-    		_this.collectedCoins++;
-        	_this.text.text = 'Coins: ' + _this.collectedCoins;
+      
+      if(collectable.key == 'greencup') {
+        _this.music.collectCoin.play();
+        _this.collectedCoins++;
+          _this.text.text = 'Coins: ' + _this.collectedCoins;
 
-    	}
-    	else if(collectable.key == 'bluecup'){
-    	      _this.game.seconds += 10;
-    	      _this.timerText.setText(_this.game.seconds);
-    	      
-    	    
-    	}
-    	collectable.destroy();
+      }
+      else if(collectable.key == 'bluecup'){
+        _this.music.collectTime.play();
+            _this.seconds += 10;
+            _this.timerText.setText(_this.seconds);
+            
+          
+      }
+      collectable.destroy();
 
-    	//console.log(collectable);
+      //console.log(collectable);
     });
     this.game.physics.arcade.overlap(this.player, this.doors, this.enterDoor, null, this);
 
@@ -164,39 +172,35 @@ TopDownGame.Game.prototype = {
 
 var speed = 500;
     if(this.cursors.up.isDown) {
-    	this.player.body.velocity.y = -speed;
-    	this.player.animations.play('up');
+      this.player.body.velocity.y = -speed;
+      this.player.animations.play('up');
     }
     if(this.cursors.down.isDown) {
-    	this.player.body.velocity.y = speed;
-    	this.player.animations.play('bottom');
+      this.player.body.velocity.y = speed;
+      this.player.animations.play('bottom');
     }
     if(this.cursors.left.isDown) {
-    	this.player.body.velocity.x = -speed;
-    	this.player.animations.play('left');
+      this.player.body.velocity.x = -speed;
+      this.player.animations.play('left');
     }
     if(this.cursors.right.isDown) {
-    	this.player.body.velocity.x = speed;
-    	this.player.animations.play('right');
+      this.player.body.velocity.x = speed;
+      this.player.animations.play('right');
     }
   },
   collect: function(player, collectable) {
     //console.log('Got it!');
-	
 
   },
   enterDoor: function(player, door) {
-   //console.log('entering door that will take you to '+door.targetTilemap+' on x:'+door.targetX+' and y:'+door.targetY);
-	  this.state.start('Dungeon');
-	  this.seconds = -1;
-	  console.log(this.state.timerIndex);
-	  clearInterval(this.state.timerIndex);
-	  
-	  
+    this.music.backgroundSound.stop();
+    this.state.start('Dungeon');
+    this.seconds = -1;
+    //console.log(this.state.timerIndex);
+    clearInterval(this.state.timerIndex);
   },
 };
 
 TopDownGame.Game.prototype.gameOver = function(){
-	this.state.start('GameOver');
-    console.log (DataManager.getInternalData())
+  this.state.start('GameOver');
 }
