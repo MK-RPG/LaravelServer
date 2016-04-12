@@ -7,9 +7,9 @@
     <div class="container">
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <div class="panel panel-default">
-                    <div class="panel-heading"> @if($user)
-                            Hello {{ $user->firstname}}
+                <div class="panel panel-default" style="background-color:transparent; border-color: black; font-family: 'Limelight', cursive; font-size: 16px; color:black">
+                    <div class="panel-heading"  style="background-color:transparent;border-color:black;color:black"> @if($user)
+                            Hello, {{ $user->firstname}} !
                         @else
                             Hello guest !
                         @endif
@@ -18,7 +18,7 @@
                     <div class="panel-body">
 
 
-                        <table class="table table-striped">
+                        <table class="table">
                             <thead>
                             <tr>
                                 <th>#</th>

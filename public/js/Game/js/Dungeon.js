@@ -121,7 +121,7 @@ this.music.backgroundSound.play();
       this.mummy = this.game.add.group();
       this.mummy.enableBody = true;
       
-      for (var i = 0; i < 150; i++)
+      for (var i = 0; i < 50; i++)
       {
           var m = this.mummy.create(0, 0, 'mummy');
           m.scale.y = 0.5;
@@ -204,21 +204,20 @@ this.music.backgroundSound.play();
     this.player.body.velocity.x = 0;
     this.player.body.velocity.y = 0;
 
-var speed = 500;
-    if(this.cursors.up.isDown) {
-      this.player.body.velocity.y = -speed;
+   if(this.cursors.up.isDown) {
+      this.player.body.velocity.y = -200;
       this.player.animations.play('up');
     }
     if(this.cursors.down.isDown) {
-      this.player.body.velocity.y = speed;
+      this.player.body.velocity.y = 200;
       this.player.animations.play('bottom');
     }
     if(this.cursors.left.isDown) {
-      this.player.body.velocity.x = -speed;
+      this.player.body.velocity.x = -200 ;
       this.player.animations.play('left');
     }
     if(this.cursors.right.isDown) {
-      this.player.body.velocity.x = speed;
+      this.player.body.velocity.x = 200;
       this.player.animations.play('right');
     }
   },
