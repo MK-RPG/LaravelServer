@@ -51,8 +51,8 @@ Route::get('/ranking', 'RankingController@index');
 Route::get('/getscore', 'GameController@getGold');
 Route::post('/postscore', 'GameController@postScore');
 
-Route::get('auth/facebook', 'UsersController@redirectToProvider');
-Route::get('auth/facebook/callback', 'UsersController@handleProviderCallback');
+Route::get('facebook', 'UsersController@redirectToProvider');
+Route::get('facebook/callback', 'UsersController@handleProviderCallback');
 
 
 

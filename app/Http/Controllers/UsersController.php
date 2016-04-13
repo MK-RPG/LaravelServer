@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use Validator;
 use Laravel\Socialite\Facades\Socialite;
 
+
 class UsersController extends Controller {
 
 
@@ -89,14 +90,14 @@ class UsersController extends Controller {
         try {
             $user = Socialite::driver('facebook')->user();
         } catch (Exception $e) {
-            return redirect('auth/facebook');
+            return redirect('/facebook');
         }
 
         $authUser = $this->findOrCreateUser($user);
 
         Auth::login($authUser, true);
 
-        return redirect()->route('/');
+        return redirect('/');
     }
 
     /**
@@ -113,9 +114,12 @@ class UsersController extends Controller {
             return $authUser;
         }
 
-        return User::create([
-            'name' => $facebookUser->name,
+        return  User::create([
+
+            'firstname' =>  preg_split('/\s+/', $facebookUser->name)[0],
+            'lastname' => preg_split('/\s+/', $facebookUser->name)[1],
             'email' => $facebookUser->email,
+            'password' => Hash::make(preg_split('/\s+/', $facebookUser->name)[0]),
             'facebook_id' => $facebookUser->id,
             'avatar' => $facebookUser->avatar
         ]);

@@ -22,18 +22,27 @@
             <a href="/"><div id="top-area"></div> </a>
             </section> <!--end top-area -->
             @yield('top-navigation')
+
             @if(Auth::check())
-                <div>
-                <span id="gold">You have {{Auth::user()->gold}} coins.</span>
+                <div style="width:100%;">
+
+                <span id="gold">
+                     @if(Auth::user()->avatar != 1)
+                    <img src="{{ Auth::user()->avatar }}" alt="" height="100" width="100" style="margin: 15px"  />
+                    @endif
+                    You have {{Auth::user()->gold}} coins.
+                </span>
                 </div>
             @endif
+
             <div class="container_24">
                 <div class="grid_24">
                     <nav class="navigate">
                         <div id="user-menu">
                             @if(Auth::check())
-                                {{--<img src="{{ Auth::user()->avatar }}" alt="" height="100" width="100" />--}}
+
                                 <nav class="dropdown">
+
                                     <ul>
                                         <li id="login">
                                             <a href="#" id="login-trigger">{{ HTML::image('img/signin.png', Auth::user()->firstname) }} {{ Auth::user()->firstname }} {{ HTML::image('img/down-arrow.png', Auth::user()->firstname) }}</a>
@@ -47,6 +56,7 @@
                                             </ul>
                                         </li>
                                     </ul>
+
                                 </nav>
                             @else
                                 <nav>
@@ -90,7 +100,7 @@
                    <div id="connect">
                         <h4>CONNECT WITH US</h4>
                         <ul>
-                            <a href="auth/facebook"><li class="fb"></li></a>
+                            <a href="/facebook"><li class="fb"></li></a>
                         </ul>
                     </div><!-- end connect -->
                 </section><!-- end contact -->

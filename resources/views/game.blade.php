@@ -1,12 +1,7 @@
 @extends('layouts.main')
 @yield('gold')
 @section('promo')
-<<<<<<< HEAD
-    <div id="game">
-=======
     <div id="game" style="width:640px;margin: 0 auto;">
-
->>>>>>> 67f51b58b1046ecb12f35c1906aad071f6b5fc28
     </div>
     {{ HTML::script('js/Game/js/phaser.js') }}
     {{ HTML::script('js/Game/js/DataManager.js') }}
